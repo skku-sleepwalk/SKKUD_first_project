@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+:root{
+
+    --main-color: #5D9AB2;
+    --accent-color: #BF6A7A;
+    --dark-color: #2B5566;
+}
+.right-box {
+    background: white;
+    float: right;
+   
+    
+  }
+.conA{
+    /* background-image: url(img/skku.png); */
+    height: 80Vh;
+}
+.Main{
+    font-family: 'Black Han Sans';
+
+    margin-top: 150px;
+    font-size: 200px;
+    background-image: url(img/skku1.png);
+    color: black;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    
+}
