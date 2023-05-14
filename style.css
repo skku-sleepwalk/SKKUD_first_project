@@ -14,16 +14,22 @@
 }
 
 
-:root{
+/* :root{
 
     --main-color: #5D9AB1;
     --accent-color: #BF6A7A;
     --dark-color: #2B5566;
-}
+} */
 html {
     /* 현재 짧아서 작동하는지 모름 */
     scroll-behavior: smooth;
 }
+.rounded {
+    line-height: 50px;
+    background: skyblue;
+    height: 50px; width: 200px;
+    border-radius: 15px;
+  }
 .right-box {
     background: white;
     float: right;
@@ -54,4 +60,7 @@ html {
     color: transparent;
 
     
+}
+.hidden{
+    display: none;
 }
