@@ -30,6 +30,14 @@ html {
     height: 50px; width: 200px;
     border-radius: 15px;
   }
+  .white-rounded {
+    line-height: 50px;
+    margin: 50px;
+    /* border: 10px black; */
+    border: 1px solid black;
+    height: 280px; width: 400px;
+    border-radius: 15px;
+  }
 .right-box {
     background: white;
     float: right;
@@ -60,6 +68,15 @@ html {
     color: transparent;
 
     
+}
+.dormitory-img{
+    background-image: url(img/dormitory.jpg);
+    background-size: 200px;
+    width: 200px;
+  height: 130px;
+}
+.white-space{
+    height: 30px;
 }
 .hidden{
     display: none;
