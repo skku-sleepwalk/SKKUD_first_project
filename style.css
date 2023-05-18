@@ -24,6 +24,12 @@ html {
     /* 현재 짧아서 작동하는지 모름 */
     scroll-behavior: smooth;
 }
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 .rounded {
     line-height: 50px;
     background: skyblue;
@@ -35,7 +41,7 @@ html {
     margin: 50px;
     /* border: 10px black; */
     border: 1px solid black;
-    height: 280px; width: 400px;
+    height: 280px; width: 380px;
     border-radius: 15px;
   }
 .right-box {
