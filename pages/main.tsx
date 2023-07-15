@@ -1,4 +1,5 @@
 import styles from "./main.module.css";
+import { Commongreenbtn } from "@/components/commongreenbtn";
 export default function main() {
   return (
     <div className={styles.backgroundColor}>
@@ -10,6 +11,7 @@ export default function main() {
           }
         `}
       </style>
+      <Commongreenbtn value="hi"></Commongreenbtn>
     </div>
   );
 }
