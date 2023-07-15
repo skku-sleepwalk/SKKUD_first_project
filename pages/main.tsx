@@ -11,7 +11,7 @@ export default function main() {
           }
         `}
       </style>
-      <Commongreenbtn value="hi"></Commongreenbtn>
+      <Commongreenbtn value="방 만들기"></Commongreenbtn>
     </div>
   );
 }
