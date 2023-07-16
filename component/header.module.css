@@ -1,13 +1,22 @@
 .header{
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    background-color: #246633;
+    height: 72px;
 }
 
 .leftside{
-    display: block;
+    height: inherit;
 }
 
 .rightside{
     display: flex;
+    width: 393px;
     justify-content: space-around;
     align-items: center;
+}
+
+.img{
+    height: inherit;
+    object-fit: contain;
 }

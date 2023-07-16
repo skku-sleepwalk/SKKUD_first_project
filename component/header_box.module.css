@@ -1,5 +1,5 @@
 .search, .sign_in{
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .input, .button{
@@ -21,7 +21,4 @@
 .button{
     width: 66px;
     height: 34px;
-}
-.button:hover{
-    background-color: aqua;
 }

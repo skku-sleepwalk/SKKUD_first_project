@@ -5,15 +5,13 @@ import Sign_in_box from "../component/sign_in";
 import header from "../component/header.module.css"
 
 export default function index() {
-  return <div className={header.rightside}>
-    <Header_search_box />
-    <Sign_in_box />
+  return <div className={header.header}>
+    <a className={header.leftside} href="https://google.com">
+        <img src="45logo_white.png" className={header.img}></img>
+    </a>
+    <div className={header.rightside}>
+      <Header_search_box />
+      <Sign_in_box />
+    </div>
   </div>;
-  // <div className={header.header}>
-  //   <div className={header.leftside}>
-  //     <img src="45logo_white.png"></img>
-  //   </div>
-    
-  // </div>;
-    
 }
