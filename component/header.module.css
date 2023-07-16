@@ -1,0 +1,13 @@
+.header{
+    background-color: green;
+}
+
+.leftside{
+    display: block;
+}
+
+.rightside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
