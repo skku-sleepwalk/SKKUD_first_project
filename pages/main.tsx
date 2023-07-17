@@ -1,5 +1,6 @@
+import { HamburgerBtn } from "@/components/HamburgerBtn/HamburgerBtn";
 import styles from "./main.module.css";
-import { Commongreenbtn } from "@/components/Commongreenbtn";
+import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 export default function main() {
   return (
     <div className={styles.backgroundColor}>
@@ -11,7 +12,10 @@ export default function main() {
           }
         `}
       </style>
-      <Commongreenbtn value="방 만들기"></Commongreenbtn>
+      <div className={styles.makeroom}>
+        {/* <Commongreenbtn value="방 만들기"></Commongreenbtn> */}
+        <HamburgerBtn></HamburgerBtn>
+      </div>
     </div>
   );
 }
