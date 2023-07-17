@@ -1,0 +1,14 @@
+#icon {
+  display: block;
+  width: 60px;
+  height: 40px;
+}
+#icon > span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  /* 안 예쁘면 수정가능 */
+  background: gray;
+  border-radius: 30px;
+  margin: 3px;
+}
