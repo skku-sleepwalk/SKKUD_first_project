@@ -5,4 +5,3 @@ export default function Sign_in_box() {
         <button type="button" className={header_box.button}>Sign in</button>
     </div>;
   }
-  

@@ -2,21 +2,27 @@
     display: flex;
     justify-content: space-between;
     background-color: #246633;
-    height: 72px;
+    height: 6vh;
+    min-height: 60px;
+    max-height: 72px;
 }
 
 .leftside{
     height: inherit;
+    min-height: inherit;
+    max-height: inherit;
 }
 
 .rightside{
     display: flex;
-    width: 393px;
+    width: 370px;
     justify-content: space-around;
     align-items: center;
 }
 
 .img{
     height: inherit;
+    min-height: inherit;
+    max-height: inherit;
     object-fit: contain;
 }
