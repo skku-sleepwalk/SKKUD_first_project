@@ -1,0 +1,11 @@
+#Search {
+  border-radius: 30px;
+  border: 0px;
+  height: 40px;
+  width: 700px;
+  padding-left: 50px;
+}
+.Search {
+  position: relative;
+  width: 700px;
+}
