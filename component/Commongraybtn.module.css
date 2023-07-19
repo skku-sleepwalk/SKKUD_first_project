@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lugrasimo&display=swap"); */
+
+.backgroundColor {
+  background-color: #ffffff;
+  color: #246633;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Lugrasimo', cursive; */
+}
