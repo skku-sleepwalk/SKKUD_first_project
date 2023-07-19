@@ -3,5 +3,5 @@
 import SearchedResult from '../components/SearchedResult';
 
 export default function index() {
-  return SearchedResult;
+  return <SearchedResult />;
 }
