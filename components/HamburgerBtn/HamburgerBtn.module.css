@@ -2,6 +2,7 @@
   display: block;
   width: 60px;
   height: 40px;
+  margin-top: 10px;
 }
 #icon > span {
   display: block;
