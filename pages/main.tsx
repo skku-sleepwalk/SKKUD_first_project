@@ -13,8 +13,8 @@ export default function main() {
         `}
       </style>
       <div className={styles.makeroom}>
-        {/* <Commongreenbtn value="방 만들기"></Commongreenbtn> */}
         <HamburgerBtn></HamburgerBtn>
+        <Commongreenbtn value="방 만들기"></Commongreenbtn>
       </div>
     </div>
   );

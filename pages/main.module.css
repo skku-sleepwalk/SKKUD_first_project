@@ -1,6 +1,7 @@
 .backgroundColor {
   background-color: #a6e89b;
   height: 100vh;
+  padding-top: 10px;
 }
 .makeroom {
   /* 여기에 위치 지정 */
