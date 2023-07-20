@@ -15,10 +15,6 @@
     gap: 10px;
 }
 
-.box{
-    height: inherit;
-}
-
 .instructorName{
     font-size: 25px;
     color: #246633;
@@ -34,5 +30,12 @@
     color: #656D76;   
 }
 .img{
+    height: inherit;
+}
+.circleImg{
+    height: inherit;
+    border-radius: 50%;
+}
+.box{
     height: inherit;
 }

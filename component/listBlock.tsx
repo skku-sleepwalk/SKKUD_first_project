@@ -10,7 +10,11 @@ export interface listblockprops{
 }
 export function ListBlock({lectureName, instructorName, paragraph, memberCnt, members}: listblockprops){
 
-    return <div className={style.blockWrapper}>
+    const showBlockInfo = () => {
+        
+    }
+
+    return <div className={style.blockWrapper} onClick={showBlockInfo}>
         <div className={style.firstLine}>
             <img src='/book.png' className={style.img}></img>
             <span className={style.instructorName}>
@@ -34,7 +38,7 @@ export function ListBlock({lectureName, instructorName, paragraph, memberCnt, me
                 <span className={style.normalText}>
                     members
                 </span>
-                {members.map((member) => (<span className={style.box}><img src={`${member}.jpg`} className={style.img} /></span>))}
+                {members.map((member) => (<span className={style.box}><img src={`${member}.jpg`} className={style.circleImg} /></span>))}
             </div>
         </div>
     </div>;
