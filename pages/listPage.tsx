@@ -7,7 +7,9 @@ export default function index() {
     return <div>
         <Header />
         <SearchedResult query="프기실" ResultCnt={3} />
-        <DoubleBtn value1='인원 많은 순' value2='최신 순' />;
+        <div>
+           <DoubleBtn value1='인원 많은 순' value2='최신 순' />
+        </div>
     </div>;
   }
   
