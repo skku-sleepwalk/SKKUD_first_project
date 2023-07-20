@@ -5,7 +5,7 @@ export interface listblockprops{
     lectureName: string;
     instructorName: string;
     paragraph: string;
-    memberCnt: number;
+    memberCnt: string;
     members: string[];
 }
 export function ListBlock({lectureName, instructorName, paragraph, memberCnt, members}: listblockprops){
