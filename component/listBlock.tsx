@@ -1,3 +1,6 @@
+
+import style from './listBlockStyle.module.css'
+
 export interface listblockprops{
     lectureName: string;
     instructorName: string;
@@ -7,31 +10,31 @@ export interface listblockprops{
 }
 export function ListBlock({lectureName, instructorName, paragraph, memberCnt, members}: listblockprops){
 
-    return <div>
-        <div>
-            <img />
-            <span>
-                {instructorName}/ 
+    return <div className={style.blockWrapper}>
+        <div className={style.firstLine}>
+            <img src='/book.png' className={style.img}></img>
+            <span className={style.instructorName}>
+                {instructorName} 교수님 / 
             </span>
-            <span>
+            <span className={style.lectureName}>
                 {lectureName}
             </span>
         </div>
-        <div>
+        <div className={style.normalText}>
             {paragraph}
         </div>
-        <div>
-            <div>
-                <img />
-                <span>
+        <div className={style.thirdLine}>
+            <div className={style.box}>
+                <img src='/gather.png' className={style.img}/>
+                <span className={style.normalText}>
                     {memberCnt}명
                 </span>
             </div>
-            <div>
-                <span>
+            <div className={style.box}>
+                <span className={style.normalText}>
                     members
                 </span>
-                {members.map((member) => (<span><img src={member} /></span>))}
+                {members.map((member) => (<span className={style.box}><img src={`${member}.jpg`} className={style.img} /></span>))}
             </div>
         </div>
     </div>;
