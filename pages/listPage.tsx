@@ -3,8 +3,9 @@ import SearchedResult from '@/component/searchedText/SearchedResult';
 
 
 export default function index() {
-    return <Header />
-    <SearchedResult />
-    ;
+    return <div>
+        <Header />
+        <SearchedResult />
+    </div>;
   }
   
