@@ -7,6 +7,7 @@ export default function index() {
     
     const lectureInfoList = [
         {
+            'id': '0',
             'lectureName': '프로그래밍 기초와 실습',
             'instructorName': '김영훈',
             'paragraph': '프로그래밍 기초와 실습을 함께 공부할 분들을 찾습니다!',
@@ -16,6 +17,7 @@ export default function index() {
             ]
         },
         {
+            'id': '1',
             'lectureName': '프로그래밍 기초와 실습',
             'instructorName': '황성재',
             'paragraph': '1일 1솔 챌린지',
@@ -25,6 +27,7 @@ export default function index() {
             ]
         },
         {
+            'id': '2',
             'lectureName': '웹프로그래밍 실습',
             'instructorName': '이이익',
             'paragraph': 'FrontEndProgramming && BackEndProgramming',
@@ -41,15 +44,15 @@ export default function index() {
         <div>
             <DoubleBtn value1='인원 많은 순' value2='최신 순' />
             {
-                lectureInfoList.map((lectureInfo) => {
-                    return <ListBlock 
+                lectureInfoList.map((lectureInfo) => <ListBlock 
+                        key={lectureInfo['id']}
                         lectureName={lectureInfo['lectureName']}
                         instructorName={lectureInfo['instructorName']}
                         paragraph={lectureInfo['paragraph']}
                         memberCnt={lectureInfo['memberCnt']}
                         members={lectureInfo['members']}
-                    />;
-                })
+                    />
+                )
             }
         </div>
     </div>;

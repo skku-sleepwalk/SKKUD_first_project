@@ -38,7 +38,11 @@ export function ListBlock({lectureName, instructorName, paragraph, memberCnt, me
                 <span className={style.normalText}>
                     members
                 </span>
-                {members.map((member) => (<span className={style.box}><img src={`${member}.jpg`} className={style.circleImg} /></span>))}
+                {members.map((member) => (
+                    <span key={member} className={style.box}>
+                        <img src={`${member}.jpg`} className={style.circleImg} />
+                    </span>
+                ))}
             </div>
         </div>
     </div>;
