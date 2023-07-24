@@ -1,6 +1,6 @@
 // 이것의 화면을 보고 싶다면 http://localhost:3000/examplepage로 들어가세요
 
-import { ListBlock, listblockprops } from '../component/listBlock';
+import { ListBlock } from '../component/listBlock/listBlock';
 
 export default function index() {
   return <div>
