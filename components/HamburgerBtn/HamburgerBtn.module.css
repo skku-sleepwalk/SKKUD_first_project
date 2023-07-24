@@ -2,6 +2,7 @@
   display: block;
   width: 60px;
   height: 40px;
+  display: inline-block;
 }
 #icon > span {
   display: block;
@@ -10,5 +11,5 @@
   /* 안 예쁘면 수정가능 */
   background: gray;
   border-radius: 30px;
-  margin: 3px;
+  margin: 7px;
 }
