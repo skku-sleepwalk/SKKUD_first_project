@@ -1,5 +1,5 @@
 
-import { randomFill } from 'crypto';
+
 import { DetailParagraph, DetailMember, DetailJoinBtn, CommentBtn, CommentBlock } from './blockDetailsComponents'
 
 export interface blockdetailsprops{
