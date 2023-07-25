@@ -18,6 +18,7 @@ export function blockDetails({
     members,
     comments
 }: blockdetailsprops){
+    
 
     return (
         <div>
