@@ -1,7 +1,7 @@
-import Header from '@/component/header/header';
-import { SearchedResult } from '@/component/searchedText/SearchedResult';
-import { DoubleBtn } from '@/component/DoubleBtn/DoubleBtn';
-import { ListBlock } from '../component/listsBlock/listBlock';
+import Header from '@/components/header/header';
+import { SearchedResult } from '@/components/searchedText/SearchedResult';
+import { DoubleBtn } from '@/components/DoubleBtn/DoubleBtn';
+import { ListBlock } from '../components/listsBlock/listBlock';
 import styles from './listPage.module.css'
 
 export default function index() {
