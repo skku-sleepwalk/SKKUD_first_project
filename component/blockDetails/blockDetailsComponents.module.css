@@ -1,4 +1,5 @@
 .detailParagraph{
     width: 66%;
+    min-height: 30vh;
     background-color: #A6E89B;
 }

@@ -1,5 +1,7 @@
 
-import style from './listBlockStyle.module.css'
+import style from './listBlockStyle.module.css';
+import { useState } from 'react';
+import { BlockDetails } from '../blockDetails/blockDetails';
 
 export interface listblockprops{
     lectureName: string;
@@ -10,11 +12,11 @@ export interface listblockprops{
 }
 export function ListBlock({lectureName, instructorName, paragraph, memberCnt, members}: listblockprops){
 
-    const showBlockInfo = () => {
-        
-    }
 
-    return <div className={style.blockWrapper} onClick={showBlockInfo}>
+    const comments = ["Something Comments1", "Something Comments2"]
+    const [popIsOpen, setPopIsOpen] = useState(false);
+
+    return <div className={style.blockWrapper} onClick={()=>setPopIsOpen(true)}>
         <div className={style.firstLine}>
             <img src='/book.png' className={style.img}></img>
             <span className={style.instructorName}>
@@ -41,5 +43,9 @@ export function ListBlock({lectureName, instructorName, paragraph, memberCnt, me
                 {members.map((member) => (<span className={style.box}><img src={`${member}.jpg`} className={style.circleImg} /></span>))}
             </div>
         </div>
+        {popIsOpen ? 
+            <BlockDetails lectureName={lectureName} instructorName={instructorName} paragraph={paragraph} memberCnt={memberCnt} members={members} comments={comments} />
+        : null
+        }
     </div>;
 }

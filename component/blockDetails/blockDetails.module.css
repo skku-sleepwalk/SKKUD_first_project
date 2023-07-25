@@ -1,0 +1,29 @@
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+		"   p   member"
+		"comment comment";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 70vh;
+    text-align: center;
+    background: aliceblue;
+}
+.header{
+
+}
+.paragraph{
+    
+}
+.members{
+
+
+}
+.comment{
+    
+}

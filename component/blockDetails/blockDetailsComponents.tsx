@@ -19,7 +19,7 @@ type detailmemberprops = {
 export function DetailMember({ memberCnt, members }: detailmemberprops){
     return (
         <div>
-
+            {memberCnt} + {members}
         </div>
     );
 }
