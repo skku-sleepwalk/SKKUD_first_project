@@ -1,0 +1,37 @@
+.listPageWrapper{
+    display: grid;
+    grid-template-areas:
+		"green1 header green2"
+		"text   text    text"
+		"   .   list      .   ";
+}
+.green1{
+    grid-area: green1;
+    background-color: #246633;
+}
+.green2{
+    grid-area: green2;
+    background-color: #246633;
+}
+.header{
+    grid-area: header;
+}
+.text{
+    grid-area: text;
+}
+.contentWrapper{
+    grid-area: list;
+    margin-top: 20px;
+    background-color: white;
+    height: 100vh;
+}
+.contentHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 50px;
+    background-color: #F6F8FA;
+}
+.DoubleBtnWrapper{
+    margin-right: 10px;
+}

@@ -1,10 +1,12 @@
-import Header from '@/component/header/header'
+import Header from '@/component/header/header';
 import { SearchedResult } from '@/component/searchedText/SearchedResult';
-import { DoubleBtn } from '@/component/DoubleBtn/DoubleBtn'
+import { DoubleBtn } from '@/component/DoubleBtn/DoubleBtn';
 import { ListBlock } from '../component/listsBlock/listBlock';
+import styles from './listPage.module.css'
 
 export default function index() {
     
+    // json file 백엔드에서 받는 코드로 추후 대체
     const lectureInfoList = [
         {
             'id': '0',
@@ -38,23 +40,44 @@ export default function index() {
         }
     ]
 
-    return <div>
-        <Header />
-        <SearchedResult query="프기실" ResultCnt={3} />
-        <div>
-            <DoubleBtn value1='인원 많은 순' value2='최신 순' />
-            {
-                lectureInfoList.map((lectureInfo) => <ListBlock 
-                        key={lectureInfo['id']}
-                        lectureName={lectureInfo['lectureName']}
-                        instructorName={lectureInfo['instructorName']}
-                        paragraph={lectureInfo['paragraph']}
-                        memberCnt={lectureInfo['memberCnt']}
-                        members={lectureInfo['members']}
-                    />
-                )
+    return (
+    <div className={styles.listPageWrapper}>
+            <style jsx global>
+            {`
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: #81C690;
             }
+            `}
+            </style>
+            <div className={styles.green1}></div>
+            <div className={styles.header}>
+                <Header />
+            </div>
+            <div className={styles.green2}></div>
+            <div className={styles.text}>
+                <SearchedResult query="프기실" ResultCnt={3} />
+            </div>
+            <div className={styles.contentWrapper}>
+                <div className={styles.contentHeader}>
+                    <div className={styles.DoubleBtnWrapper}>
+                        <DoubleBtn value1='인원 많은 순' value2='최신 순' />
+                    </div>
+                </div>
+                {
+                    lectureInfoList.map((lectureInfo) => <ListBlock 
+                            key={lectureInfo['id']}
+                            lectureName={lectureInfo['lectureName']}
+                            instructorName={lectureInfo['instructorName']}
+                            paragraph={lectureInfo['paragraph']}
+                            memberCnt={lectureInfo['memberCnt']}
+                            members={lectureInfo['members']}
+                        />
+                    )
+                }
         </div>
-    </div>;
+    </div>
+    );
   }
   
