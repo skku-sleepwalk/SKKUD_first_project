@@ -40,6 +40,7 @@ export default function main() {
               width: "100%",
               height: "90%",
               borderRadius: "0.5rem",
+              paddingTop: "3vh",
             }}
           >
             {week == 0 ? (
@@ -47,15 +48,68 @@ export default function main() {
                 style={{
                   height: "50px",
                   width: "50px",
+                  borderRadius: "0",
+                  border: "0",
+                  backgroundColor: "#246633",
+                  color: "white",
+                  fontSize: "25px",
+                  fontWeight: "bold",
                 }}
-              ></button>
+              >
+                월
+              </button>
             ) : (
               <button
                 style={{
                   height: "50px",
                   width: "50px",
+                  borderRadius: "0",
+                  border: "0",
+                  backgroundColor: "#F2F2F2",
+                  color: "#B2B2B2",
+                  fontSize: "25px",
+                  fontWeight: "bold",
                 }}
-              ></button>
+                onClick={() => {
+                  setweek(0);
+                }}
+              >
+                월
+              </button>
+            )}
+            {week == 1 ? (
+              <button
+                style={{
+                  height: "50px",
+                  width: "50px",
+                  borderRadius: "0",
+                  border: "0",
+                  backgroundColor: "#246633",
+                  color: "white",
+                  fontSize: "25px",
+                  fontWeight: "bold",
+                }}
+              >
+                화
+              </button>
+            ) : (
+              <button
+                style={{
+                  height: "50px",
+                  width: "50px",
+                  borderRadius: "0",
+                  border: "0",
+                  backgroundColor: "#F2F2F2",
+                  color: "#B2B2B2",
+                  fontSize: "25px",
+                  fontWeight: "bold",
+                }}
+                onClick={() => {
+                  setweek(1);
+                }}
+              >
+                화
+              </button>
             )}
           </div>
         </div>
