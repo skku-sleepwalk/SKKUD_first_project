@@ -7,7 +7,9 @@ type detailparagraphprops = {
 export function DetailParagraph({ paragraph }: detailparagraphprops){
     return (
         <div className={styles.detailParagraph}>
-            paragraph
+            <div className={styles.detailParagraphContent}>
+                {paragraph}
+            </div>
         </div>
     );
 }

@@ -1,4 +1,8 @@
 .detailParagraph{
+    display: flex;
     min-height: 40vh;
     background-color: #A6E89B;
+}
+.detailParagraphContent{
+    margin: 10px;
 }
