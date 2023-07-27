@@ -4,26 +4,36 @@
         "header header"
 		"   p   member"
 		"comment comment";
+    grid-template-rows: 8vh auto auto;
+    grid-template-columns: 3fr 1fr;
+    align-items: stretch;
+    gap: 1vw;
 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 70%;
-    height: 70vh;
+    width: 70vw;
+    min-height: 70vh;
     text-align: center;
     background: aliceblue;
+    border: 1px solid #246633;
 }
 .header{
-
+    grid-area: header;
+    border-bottom: 1px solid #246633;
+    min-height: 5vh;
 }
 .paragraph{
+    grid-area: p;
     
 }
 .members{
+    grid-area: member;
 
 
 }
 .comment{
+    grid-area: comment;
     
 }

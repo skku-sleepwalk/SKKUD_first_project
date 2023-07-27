@@ -51,3 +51,14 @@ export function CommentBlock({ comment }: commentblockprops){
     );
 }
 
+type detailheaderprops = {
+    instructorName: string;
+    lectureName: string;
+}
+export function DetailHedaer({ instructorName, lectureName }: detailheaderprops){
+    return(
+        <h1>
+            {instructorName} / {lectureName}
+        </h1>
+    );
+}

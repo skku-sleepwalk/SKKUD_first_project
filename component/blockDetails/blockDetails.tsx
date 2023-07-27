@@ -1,6 +1,6 @@
 
 
-import { DetailParagraph, DetailMember, DetailJoinBtn, CommentBtn, CommentBlock } from './blockDetailsComponents'
+import { DetailParagraph, DetailMember, DetailJoinBtn, CommentBtn, CommentBlock, DetailHedaer } from './blockDetailsComponents'
 import style from './blockDetails.module.css'
 
 export interface blockdetailsprops{
@@ -23,12 +23,7 @@ export function BlockDetails({
     return (
         <div className={style.wrapper}>
             <div className={style.header}>
-                <span>
-                    {instructorName} /
-                </span>
-                <span>
-                    {lectureName}
-                </span>
+                <DetailHedaer instructorName={instructorName} lectureName={lectureName} />
             </div>
             <div className={style.paragraph}>
                 <DetailParagraph paragraph={paragraph}/>
