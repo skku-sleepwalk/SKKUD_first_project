@@ -21,6 +21,7 @@
 }
 .header{
     grid-area: header;
+    align-self: center;
     border-bottom: 1px solid #246633;
     min-height: 5vh;
 }
