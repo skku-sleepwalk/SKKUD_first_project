@@ -12,9 +12,9 @@ export default function CommonInput(
 ) {
     return(
         <div className={style.wrapper}>
-            <div className={style.labelWrapper}>
+            {label !== 'x' ? <div className={style.labelWrapper}>
                 <label className={style.label}> {label} </label>
-            </div>
+            </div> : null}
             <input className={style.input} type="text" placeholder={placeholder}></input>
         </div>
     );

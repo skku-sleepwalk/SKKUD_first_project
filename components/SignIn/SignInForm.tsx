@@ -16,10 +16,12 @@ export function SignInForm() {
                 </div>
                 <div className={style.email}>
                     <div className={EmailStyle.EmailWrapper}>
-                        <input type="text" placeholder="skku@g.skku.edu"></input>
-                        <button type="button" className={EmailStyle.button}> 인증 요청 </button>
+                        <div className={EmailStyle.email}>
+                            <CommonInput label="email" placeholder="skku@g.skku.edu" />
+                        </div>
+                        <button type="button" className={`${EmailStyle.button} ${EmailStyle.buttonArea}`}> 인증 요청 </button>
                     </div>
-                    <input type="text" placeholder="인증번호 입력" className={EmailStyle.input}></input>
+                        <CommonInput label="x" placeholder="인증번호 입력" />
                 </div>
                 <button type="submit" className={`${EmailStyle.button} ${style.sumbitBtn}`}>
                     회원가입 완료

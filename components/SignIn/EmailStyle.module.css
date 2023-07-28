@@ -4,12 +4,16 @@
     background-color: #246633;
     color: white;
 }
-.EmailWrapper{
-    display: flex;
+.buttonArea{
+    grid-area: btn;
 }
-.input{
-    min-height: 48px;
-    border-radius: 5px;
-    border: 1px #8491A7 solid;
-    padding: 0 10px;
+.EmailWrapper{
+    display: grid;
+    grid-template-areas: 
+        "email ."
+        "email btn"
+    ;
+}
+.email{
+    grid-area: email;
 }

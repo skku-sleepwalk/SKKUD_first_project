@@ -17,6 +17,7 @@
 }
 .email{
     grid-area: email;
+    margin-bottom: 24px;
 }
 .name{
     grid-area: name;
