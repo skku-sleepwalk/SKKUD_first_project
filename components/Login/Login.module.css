@@ -1,0 +1,57 @@
+.OuterWrapper{
+    display: flex;
+    justify-content: center;
+}
+.LoginFormInnerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 40vh;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+.LoginFormcontentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    gap: 5px;
+    width: 360px;
+}
+.HeaderContent{
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    width: 10vw;
+}
+.LoginFormInput{
+    min-height: 48px;
+    border-radius: 5px;
+    border: 1px #8491A7 solid;
+    padding: 0 10px;
+}
+.LoginFormInput::placeholder{
+    color: #8491A7
+}
+.LoginFormLoginBtn{
+    min-height: 48px;
+    border-radius: 5px;
+    background-color: #246633;
+    color: white;
+}
+.LoginFormLoginBtn:active{
+    transform: scale(0.95);
+}
+.LoginFormSigninBtn{
+    min-height: 48px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: gray;
+}
+.LoginFormSigninBtn:active {
+    transform: scale(0.95);
+  }
