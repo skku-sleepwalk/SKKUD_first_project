@@ -1,5 +1,5 @@
 import Header from '@/components/header/header'
-import { LoginHeader, LoginForm } from '@/components/Login/Login';
+import { SignInForm } from '@/components/SignIn/SignInForm';
 
 export default function index() {
     return <div>
@@ -8,13 +8,11 @@ export default function index() {
           body {
             margin: 0px;
             padding: 0px;
-            background-color: #81C690;
           }
         `}
       </style>
         <Header />
-        <LoginHeader />
-        <LoginForm />
+        <SignInForm />
     </div>;
   }
   

@@ -1,0 +1,26 @@
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    ".  id ." 
+    ".  pw ." 
+    ".  name ." 
+    ".  email ." 
+    ".  sumbitBtn ."
+    ;
+    justify-content: center;
+}
+.id{
+    grid-area: id;
+}
+.pw{
+    grid-area: pw;
+}
+.email{
+    grid-area: email;
+}
+.name{
+    grid-area: name;
+}
+.sumbitBtn{
+    grid-area: sumbitBtn;
+}

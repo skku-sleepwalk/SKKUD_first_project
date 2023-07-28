@@ -1,0 +1,15 @@
+.button{
+    min-height: 48px;
+    border-radius: 5px;
+    background-color: #246633;
+    color: white;
+}
+.EmailWrapper{
+    display: flex;
+}
+.input{
+    min-height: 48px;
+    border-radius: 5px;
+    border: 1px #8491A7 solid;
+    padding: 0 10px;
+}
