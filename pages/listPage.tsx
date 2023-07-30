@@ -4,6 +4,9 @@ import { DoubleBtn } from '@/components/DoubleBtn/DoubleBtn';
 import { ListBlock } from '../components/listsBlock/listBlock';
 import styles from './listPage.module.css'
 
+// listPage에서 각 스터디 방을 누르면 스터디의 상세 정보가 나오는 팝업 창 기능을 구현 중에 있습니다.
+// listPage/blockDetails 브랜치에서 확인 가능합니다. 미완성인 부분이 있습니다.
+
 export default function index() {
     
     // 각 방(스터디 모집 글) Info List // json file 백엔드에서 받는 코드로 추후 대체
