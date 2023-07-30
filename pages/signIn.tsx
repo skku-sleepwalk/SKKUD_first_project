@@ -11,6 +11,7 @@ export default function index() {
           }
         `}
       </style>
+        
         <Header />
         <SignInForm />
     </div>;

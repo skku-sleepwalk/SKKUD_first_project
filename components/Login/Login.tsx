@@ -13,8 +13,10 @@ export function LoginHeader() {
 
 export function LoginForm() {
     return(
+        // flex로 가운데 정렬을 했습니다.
         <div className={style.OuterWrapper}>
-            <form className={style.LoginFormInnerWrapper}>
+            <form>
+                {/* input과 버튼을 세로로 정렬해주는 flex div입니다. */}
                 <div className={style.LoginFormcontentWrapper}>
                     <input className={style.LoginFormInput} type="text" placeholder="아이디"></input>
                     <input className={style.LoginFormInput} type="password" placeholder="비밀번호"></input>
