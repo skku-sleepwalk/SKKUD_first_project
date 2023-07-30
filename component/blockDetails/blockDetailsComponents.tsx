@@ -1,6 +1,10 @@
 
 import styles from './blockDetailsComponents.module.css'
 
+// 팝업창의 각 컴포넌트 스타일링을 하는 문서입니다.
+// 팝업창의 모든 컴포넌트를 여기서 작업합니다.
+// 미완성입니다. 배치 작업 중에 떠나게 되어 스타일링은 다시 해야 할 것 같습니다..
+
 type detailparagraphprops = {
     paragraph: string;
 }
@@ -15,7 +19,7 @@ export function DetailParagraph({ paragraph }: detailparagraphprops){
 }
 
 type detailmemberprops = {
-    memberCnt: number;
+    memberCnt: string;
     members: string[];
 }
 export function DetailMember({ memberCnt, members }: detailmemberprops){
