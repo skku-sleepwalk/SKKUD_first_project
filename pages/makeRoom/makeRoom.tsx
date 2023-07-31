@@ -35,141 +35,144 @@ export default function main() {
               paddingTop: "3vh",
             }}
           >
-            {week1 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek1(0);
-                }}
-              >
-                월
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek1(1);
-                }}
-              >
-                월
-              </button>
-            )}
-            {week2 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek2(0);
-                }}
-              >
-                화
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek2(1);
-                }}
-              >
-                화
-              </button>
-            )}
+            {" "}
+            <div style={{ paddingLeft: "100px" }}>
+              {week1 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek1(0);
+                  }}
+                >
+                  월
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek1(1);
+                  }}
+                >
+                  월
+                </button>
+              )}
+              {week2 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek2(0);
+                  }}
+                >
+                  화
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek2(1);
+                  }}
+                >
+                  화
+                </button>
+              )}
 
-            {week3 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek3(0);
-                }}
-              >
-                수
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek3(1);
-                }}
-              >
-                수
-              </button>
-            )}
+              {week3 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek3(0);
+                  }}
+                >
+                  수
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek3(1);
+                  }}
+                >
+                  수
+                </button>
+              )}
 
-            {week4 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek4(0);
-                }}
-              >
-                목
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek4(1);
-                }}
-              >
-                목
-              </button>
-            )}
-            {week5 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek5(0);
-                }}
-              >
-                금
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek5(1);
-                }}
-              >
-                금
-              </button>
-            )}
-            {week6 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek6(0);
-                }}
-              >
-                토
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek6(1);
-                }}
-              >
-                토
-              </button>
-            )}
-            {week7 == 1 ? (
-              <button
-                className={styles.btnTrue}
-                onClick={() => {
-                  setweek7(0);
-                }}
-              >
-                일
-              </button>
-            ) : (
-              <button
-                className={styles.btnFalse}
-                onClick={() => {
-                  setweek7(1);
-                }}
-              >
-                일
-              </button>
-            )}
+              {week4 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek4(0);
+                  }}
+                >
+                  목
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek4(1);
+                  }}
+                >
+                  목
+                </button>
+              )}
+              {week5 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek5(0);
+                  }}
+                >
+                  금
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek5(1);
+                  }}
+                >
+                  금
+                </button>
+              )}
+              {week6 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek6(0);
+                  }}
+                >
+                  토
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek6(1);
+                  }}
+                >
+                  토
+                </button>
+              )}
+              {week7 == 1 ? (
+                <button
+                  className={styles.btnTrue}
+                  onClick={() => {
+                    setweek7(0);
+                  }}
+                >
+                  일
+                </button>
+              ) : (
+                <button
+                  className={styles.btnFalse}
+                  onClick={() => {
+                    setweek7(1);
+                  }}
+                >
+                  일
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

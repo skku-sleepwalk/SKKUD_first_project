@@ -32,6 +32,7 @@
   color: white;
   font-size: 25px;
   font-weight: bold;
+  margin: 10px;
 }
 .btnFalse {
   height: 50px;
@@ -42,4 +43,5 @@
   color: #b2b2b2;
   font-size: 25px;
   font-weight: bold;
+  margin: 10px;
 }
