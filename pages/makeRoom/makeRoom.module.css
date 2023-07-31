@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-
+/* //현재 구글폰트 적용 안됨 */
 .backgroundColor {
   background-color: #81c690;
   height: 100vh;
@@ -44,4 +44,30 @@
   font-size: 25px;
   font-weight: bold;
   margin: 10px;
+}
+.subjectNameInput {
+  margin-left: 35px;
+  width: 500px;
+  height: 30px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: none;
+  text-indent: 10px;
+}
+.font1 {
+  font-family: "Inter", sans-serif;
+  margin-left: 25px;
+}
+.detailInput {
+  margin-left: 15px;
+  width: 500px;
+  height: 90px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: none;
+
+  line-height: 30px;
+  text-indent: 10px;
+  overflow: hidden; /* 스크롤바 숨김 */
+  resize: none; /* 사용자가 크기 조절하지 못하도록 비활성화 */
 }

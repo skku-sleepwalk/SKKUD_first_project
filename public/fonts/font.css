@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap")
+    format("woff2");
+  /* Add any other font properties like font-weight or font-style if needed */
+}
+
+.aa {
+  font-family: "Inter", sans-serif; /* Fallback to a system font if the custom font is not available */
+}

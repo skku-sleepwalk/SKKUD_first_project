@@ -35,7 +35,6 @@ export default function main() {
               paddingTop: "3vh",
             }}
           >
-            {" "}
             <div style={{ paddingLeft: "100px" }}>
               {week1 == 1 ? (
                 <button
@@ -172,6 +171,29 @@ export default function main() {
                   일
                 </button>
               )}
+            </div>
+            <div style={{ marginTop: "10px" }}>
+              <span className={styles.font1}>과목명</span>
+              <input type="text" className={styles.subjectNameInput} />
+            </div>
+
+            <div style={{ marginTop: "10px" }}>
+              <span className={styles.font1}>교수명</span>
+              <input type="text" className={styles.subjectNameInput} />
+            </div>
+            <div style={{ marginTop: "10px" }}>
+              <span
+                className={styles.font1}
+                style={{ position: "relative", bottom: "75px" }}
+              >
+                상세 내용
+              </span>
+
+              <textarea
+                placeholder="시간, 오픈채팅방 주소 등을 적어주세요"
+                style={{ display: "inline-block" }}
+                className={styles.detailInput}
+              ></textarea>
             </div>
           </div>
         </div>
