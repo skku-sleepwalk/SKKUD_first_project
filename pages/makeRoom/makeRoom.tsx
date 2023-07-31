@@ -37,16 +37,7 @@ export default function main() {
           >
             {week1 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek1(0);
                 }}
@@ -55,16 +46,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek1(1);
                 }}
@@ -74,16 +56,7 @@ export default function main() {
             )}
             {week2 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek2(0);
                 }}
@@ -92,16 +65,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek2(1);
                 }}
@@ -112,16 +76,7 @@ export default function main() {
 
             {week3 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek3(0);
                 }}
@@ -130,16 +85,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek3(1);
                 }}
@@ -150,16 +96,7 @@ export default function main() {
 
             {week4 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek4(0);
                 }}
@@ -168,16 +105,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek4(1);
                 }}
@@ -187,16 +115,7 @@ export default function main() {
             )}
             {week5 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek5(0);
                 }}
@@ -205,16 +124,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek5(1);
                 }}
@@ -224,16 +134,7 @@ export default function main() {
             )}
             {week6 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek6(0);
                 }}
@@ -242,16 +143,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek6(1);
                 }}
@@ -261,16 +153,7 @@ export default function main() {
             )}
             {week7 == 1 ? (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#246633",
-                  color: "white",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnTrue}
                 onClick={() => {
                   setweek7(0);
                 }}
@@ -279,16 +162,7 @@ export default function main() {
               </button>
             ) : (
               <button
-                style={{
-                  height: "50px",
-                  width: "50px",
-                  borderRadius: "0",
-                  border: "0",
-                  backgroundColor: "#F2F2F2",
-                  color: "#B2B2B2",
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                }}
+                className={styles.btnFalse}
                 onClick={() => {
                   setweek7(1);
                 }}
