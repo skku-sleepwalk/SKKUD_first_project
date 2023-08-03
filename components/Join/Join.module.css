@@ -1,0 +1,297 @@
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5rem;
+  padding-top: 1rem;
+
+  cursor: default;
+}
+
+.subTitle {
+  margin-bottom: 0.4rem;
+}
+
+.infoWrapper {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.5rem;
+
+  width: 100%;
+
+  border-top: 1px solid gainsboro;
+}
+
+.infoWrapperBdrBtm {
+  border-bottom: 1px solid gainsboro;
+}
+
+.infoLabel {
+  display: flex;
+  box-sizing: border-box;
+
+  width: 6rem;
+  height: 2rem;
+  align-items: center;
+
+  font-size: small;
+}
+
+.infoBox {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+
+  width: 20rem;
+}
+
+.infoInput {
+  box-sizing: border-box;
+  max-width: 10rem;
+  height: 2.1rem;
+  padding: 0.1rem 0.4rem;
+
+  border: 1px solid gainsboro;
+  border-radius: 0.2rem;
+  outline: none;
+}
+
+.infoInput:focus {
+  border: 1.2px solid #246633;
+  border-radius: 0.2rem;
+}
+
+.infoPlaceholder {
+  display: flex;
+  box-sizing: border-box;
+
+  height: 2rem;
+  margin-left: 0.7rem;
+  align-items: center;
+
+  font-size: small;
+  color: darkgray;
+}
+
+.infoNotice {
+  box-sizing: border-box;
+
+  height: 1rem;
+
+  font-size: small;
+  color: darkgray;
+}
+
+.certifiButton {
+  box-sizing: border-box;
+  height: 2.1rem;
+  margin-left: 0.7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.6rem;
+
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #246633;
+
+  color: white;
+  font-size: small;
+  cursor: pointer;
+}
+
+.certifiButton:hover {
+  background-color: #1c5028;
+}
+
+/* 아래는 서비스 이용 약관 css */
+
+.titleMarginTop {
+  margin-top: 3rem;
+}
+
+.serviceContainer {
+  border: 1px solid gainsboro;
+  background-color: rgb(249, 249, 249);
+}
+
+.serviceTopWrapper {
+  display: flex;
+  padding: 0.7rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.serviceWrapper {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid gainsboro;
+}
+
+.serviceTitle {
+  width: 100%;
+  margin: 0.7rem 0rem;
+
+  font-size: small;
+  font-weight: bold;
+}
+
+.scrollBox {
+  height: 7rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid gainsboro;
+
+  font-size: small;
+
+  overflow-y: scroll;
+}
+
+.serviceCheckBox {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  align-items: center;
+  gap: 0.2rem;
+
+  font-size: small;
+}
+
+.checkButton {
+  display: flex;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 2px solid gainsboro;
+  background-color: ghostwhite;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.checkedButton {
+  border: 2px solid #246633 !important;
+  background-color: #b9dac0 !important;
+}
+
+.joinButtonBox {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+
+  justify-content: center;
+}
+
+.joinButton {
+  width: 10rem;
+  height: 2.2rem;
+
+  border: none;
+  background-color: #246633;
+
+  color: white;
+  font-size: small;
+  cursor: pointer;
+}
+
+.joinButton:hover {
+  background-color: #1c5028;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .displayNone {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    box-sizing: border-box;
+    width: 350px;
+    padding: 1rem;
+    padding-top: 0.5rem;
+
+    cursor: default;
+  }
+
+  .infoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0.2rem 0rem;
+
+    width: 100%;
+    border: none;
+  }
+
+  .infoMarginTop {
+    margin-top: 0.5rem;
+  }
+
+  .infoLabel {
+    width: 100%;
+    height: 1.8rem;
+
+    font-weight: 600;
+    font-size: medium;
+  }
+
+  .infoInput {
+    max-width: none;
+    flex-grow: 1;
+    outline: none;
+  }
+
+  .infoPlaceholder {
+    display: flex;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 1.2rem;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  .infoNotice {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  /* 아래는 서비스 이용 약관 css */
+
+  .titleMarginTop {
+    margin-top: 1.2rem;
+  }
+
+  .serviceTopWrapper {
+    padding: 0.5rem 0.5rem;
+    font-size: small;
+  }
+
+  .serviceWrapper {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .scrollBox {
+    font-size: x-small;
+  }
+
+  .serviceCheckBox {
+    font-size: x-small;
+  }
+
+  .joinButtonBox {
+    margin-top: 1.2rem;
+  }
+
+  .joinButton {
+    width: 10rem;
+    height: 2.5rem;
+    flex-grow: 1;
+  }
+}
