@@ -1,0 +1,28 @@
+.signInBox,
+.searchBox {
+  height: 100%;
+}
+
+.searchInput,
+.signInButton {
+  box-sizing: border-box;
+  outline: 0;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.3rem;
+}
+
+.searchInput {
+  width: 15rem;
+  height: 100%;
+  padding: 0.2rem 0.4rem;
+}
+.searchInput::placeholder {
+  color: #b9dac0;
+}
+
+.signInButton {
+  width: 4.13rem;
+  height: 100%;
+}
