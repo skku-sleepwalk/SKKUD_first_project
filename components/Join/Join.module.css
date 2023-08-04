@@ -97,6 +97,10 @@
   cursor: pointer;
 }
 
+.certifiButton:active {
+  transform: translateY(0.07rem);
+}
+
 .certifiButton:hover {
   background-color: #1c5028;
 }

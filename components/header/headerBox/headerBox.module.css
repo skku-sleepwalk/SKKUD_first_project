@@ -31,8 +31,13 @@
 
 /* 모바일 용 미디어 쿼리 정의 */
 @media (max-width: 500px) {
+  .searchBox {
+    display: flex;
+    flex-grow: 1;
+  }
+
   .searchInput {
-    width: 12.5rem;
+    width: 100%;
     color: black;
     border: 1px solid gainsboro;
   }
