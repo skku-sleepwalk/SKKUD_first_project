@@ -1,5 +1,6 @@
 import { Join } from "@/components/Join/Join";
 import Header from "@/components/header/header";
+import { isLogin } from "./listPage";
 
 export default function index() {
   return (
@@ -13,7 +14,7 @@ export default function index() {
         `}
       </style>
 
-      <Header isLogin={false} />
+      <Header isLogin={isLogin} />
       <Join />
     </div>
   );

@@ -1,5 +1,3 @@
-// 이것의 화면을 보고 싶다면 http://localhost:3000/examplepage 로 들어가세요
-
 import SearchBox from "./headerBox/searchBox";
 import LoginBox, { loginProps } from "./headerBox/loginBox";
 import header from "./header.module.css";

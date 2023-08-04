@@ -1,20 +1,20 @@
-import Header from '@/components/header/header'
-import { LoginHeader, LoginForm } from '@/components/Login/Login';
+import Header from "@/components/header/header";
+import { Login } from "@/components/Login/Login";
+import { isLogin } from "./listPage";
 
 export default function index() {
-    return <div>
-        <style jsx global>
+  return (
+    <div>
+      <style jsx global>
         {`
           body {
             margin: 0px;
             padding: 0px;
-            background-color: #81C690;
           }
         `}
       </style>
-        <Header />
-        <LoginHeader />
-        <LoginForm />
-    </div>;
-  }
-  
+      <Header isLogin={isLogin} />
+      <Login />
+    </div>
+  );
+}
