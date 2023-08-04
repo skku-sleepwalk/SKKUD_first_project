@@ -25,4 +25,29 @@
 .signInButton {
   width: 4.13rem;
   height: 100%;
+
+  cursor: pointer;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .searchInput {
+    width: 13.5rem;
+    color: black;
+    border: 1px solid gainsboro;
+  }
+
+  .searchInput:focus {
+    border: 1px solid #246633;
+  }
+
+  .signInButton {
+    width: 3.5rem;
+    color: black;
+    border: none;
+  }
+
+  .searchInput::placeholder {
+    color: black;
+  }
 }

@@ -1,32 +1,108 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  background-color: #246633;
-  height: 3.75rem;
-  min-height: 3.75rem;
-  max-height: 4.5rem;
+  position: fixed;
   width: 100%;
+  height: 3.75rem;
+
+  background-color: #246633;
+  justify-content: space-between;
 }
 
 .leftSide {
   display: flex;
   height: inherit;
-  min-height: inherit;
-  max-height: inherit;
 
   align-items: center;
 }
 
 .rightSide {
   display: flex;
-  width: 23.12rem;
+  box-sizing: border-box;
+  width: auto;
+  height: inherit;
   padding: 0.5rem 0rem;
-  justify-content: space-around;
+  padding-right: 1rem;
 
+  gap: 1rem;
   align-items: center;
 }
 
 .img {
   height: 2.9rem;
   margin-left: 0.3rem;
+}
+
+.menuButton {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.iconMenu {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.emptyBox {
+  width: 100%;
+  height: 3.75rem;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 6.25rem;
+    justify-content: center;
+  }
+
+  .leftSide {
+    display: flex;
+    width: 100%;
+    height: 3.75rem;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightSide {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem 0rem;
+
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+
+    justify-content: center;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .menuButton {
+    height: 1.5rem;
+    width: 1.9rem;
+    padding: 0rem 0.2rem;
+
+    order: -1;
+  }
+
+  .iconMenu {
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .emptyBox {
+    height: 6.25rem;
+  }
 }
