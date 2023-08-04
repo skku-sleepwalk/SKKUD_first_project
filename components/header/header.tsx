@@ -1,11 +1,11 @@
 // 이것의 화면을 보고 싶다면 http://localhost:3000/examplepage 로 들어가세요
 
 import SearchBox from "./headerBox/searchBox";
-import SignInBox from "./headerBox/signInBox";
+import LoginBox, { loginProps } from "./headerBox/loginBox";
 import header from "./header.module.css";
 import { IconMenu2 } from "@tabler/icons-react";
 
-export default function index() {
+export default function index({ isLogin }: loginProps) {
   return (
     <>
       <div className={header.header}>
@@ -14,7 +14,7 @@ export default function index() {
         </a>
         <div className={header.rightSide}>
           <SearchBox />
-          <SignInBox />
+          <LoginBox isLogin={isLogin} />
           <button className={header.menuButton}>
             <IconMenu2 className={header.iconMenu} />
           </button>

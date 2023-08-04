@@ -13,7 +13,7 @@ export default function index() {
         `}
       </style>
 
-      <Header />
+      <Header isLogin={false} />
       <Join />
     </div>
   );
