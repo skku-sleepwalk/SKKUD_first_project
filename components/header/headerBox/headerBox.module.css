@@ -1,10 +1,10 @@
-.signInBox,
+.loginBox,
 .searchBox {
   height: 100%;
 }
 
 .searchInput,
-.signInButton {
+.loginButton {
   box-sizing: border-box;
   outline: 0;
   background-color: transparent;
@@ -22,9 +22,9 @@
   color: #b9dac0;
 }
 
-.signInButton {
-  width: 4.13rem;
+.loginButton {
   height: 100%;
+  padding: 0rem 0.5rem;
 
   cursor: pointer;
 }
@@ -32,7 +32,7 @@
 /* 모바일 용 미디어 쿼리 정의 */
 @media (max-width: 500px) {
   .searchInput {
-    width: 13.5rem;
+    width: 12.5rem;
     color: black;
     border: 1px solid gainsboro;
   }
@@ -41,8 +41,8 @@
     border: 1px solid #246633;
   }
 
-  .signInButton {
-    width: 3.5rem;
+  .loginButton {
+    padding: 0rem 0.2rem;
     color: black;
     border: none;
   }
