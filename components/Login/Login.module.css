@@ -80,6 +80,8 @@
 
 .checkButton {
   display: flex;
+  width: 1.2rem;
+  height: 1.2rem;
   padding: 0;
 
   border-radius: 50%;

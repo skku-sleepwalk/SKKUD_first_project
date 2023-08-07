@@ -1,0 +1,14 @@
+.button {
+  width: auto;
+  height: auto;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(0.07rem);
+}
