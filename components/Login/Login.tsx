@@ -1,8 +1,9 @@
 import { IconCheck, IconLock, IconUser } from "@tabler/icons-react";
 import style from "./Login.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LoginErrorModal } from "./LoginErrorModal/LoginErrorModal";
+import { movePage } from "../Common/AppShell/Header/Header";
 
 export function Login() {
   // 아이디/비번 받아오는 것 관련
@@ -103,7 +104,13 @@ export function Login() {
               로그인
             </button>
             <div className={style.buttonBox}>
-              <button type="button" className={style.button}>
+              <button
+                type="button"
+                className={style.button}
+                onClick={() => {
+                  movePage("/join");
+                }}
+              >
                 회원가입
               </button>
               <button type="button" className={style.button}>

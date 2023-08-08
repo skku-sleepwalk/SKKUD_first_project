@@ -1,11 +1,6 @@
 import { Login } from "@/components/Login/Login";
-import { isLogin } from "./listPage";
-import AppShell from "@/components/Common/AppShell/AppShell";
+import Head from "next/head";
 
-export default function index() {
-  return (
-    <AppShell isLogin={isLogin}>
-      <Login />
-    </AppShell>
-  );
+export default function Main() {
+  return <Login />;
 }

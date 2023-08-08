@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  position: fixed;
   width: 100%;
   height: 3.75rem;
 
@@ -32,6 +31,37 @@
   margin-left: 0.5rem;
 }
 
+.loginBox,
+.searchBox {
+  height: 100%;
+}
+
+.searchInput,
+.loginButton {
+  box-sizing: border-box;
+  height: 100%;
+
+  outline: 0;
+  border: 2px solid white;
+  border-radius: 0.3rem;
+
+  background-color: transparent;
+  color: white;
+}
+
+.searchInput {
+  width: 15rem;
+  padding: 0.2rem 0.4rem;
+}
+.searchInput::placeholder {
+  color: #b9dac0;
+}
+
+.loginButton {
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+
 .menuButton {
   height: 2rem;
   width: 2rem;
@@ -48,11 +78,6 @@
   color: white;
   width: 2rem;
   height: 2rem;
-}
-
-.emptyBox {
-  width: 100%;
-  height: 3.75rem;
 }
 
 /* 모바일 용 미디어 쿼리 정의 */
@@ -90,6 +115,31 @@
     align-items: center;
   }
 
+  .searchBox {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .searchInput {
+    width: 100%;
+    color: black;
+    border: 1px solid gainsboro;
+  }
+
+  .searchInput:focus {
+    border: 1px solid #246633;
+  }
+
+  .loginButton {
+    padding: 0rem 0.2rem;
+    color: black;
+    border: none;
+  }
+
+  .searchInput::placeholder {
+    color: black;
+  }
+
   .menuButton {
     height: 1.5rem;
     width: 1.9rem;
@@ -102,9 +152,5 @@
     color: black;
     width: 1.5rem;
     height: 1.5rem;
-  }
-
-  .emptyBox {
-    height: 6.25rem;
   }
 }

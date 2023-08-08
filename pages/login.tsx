@@ -1,20 +1,13 @@
-import Header from "@/components/header/header";
 import { Login } from "@/components/Login/Login";
-import { isLogin } from "./listPage";
+import Head from "next/head";
 
-export default function index() {
+export default function Main() {
   return (
-    <div>
-      <style jsx global>
-        {`
-          body {
-            margin: 0px;
-            padding: 0px;
-          }
-        `}
-      </style>
-      <Header isLogin={isLogin} />
+    <>
+      <Head>
+        <title>로그인</title>
+      </Head>
       <Login />
-    </div>
+    </>
   );
 }
