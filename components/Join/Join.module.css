@@ -202,7 +202,8 @@
 }
 
 /* 모바일 용 미디어 쿼리 정의 */
-@media (max-width: 500px) {
+/* 가로로 내용이 많아서 여기만 기준이 다름 */
+@media (max-width: 620px) {
   .displayNone {
     display: none;
   }

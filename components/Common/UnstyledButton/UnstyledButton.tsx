@@ -1,4 +1,3 @@
-import { ButtonHTMLAttributes } from "react";
 import style from "./UnstyledButton.module.css";
 
 interface UnstylesButtonProps {

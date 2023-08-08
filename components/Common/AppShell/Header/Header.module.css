@@ -63,14 +63,6 @@
 }
 
 .menuButton {
-  height: 2rem;
-  width: 2rem;
-  padding: 0;
-
-  background-color: transparent;
-  outline: none;
-  border: none;
-
   cursor: pointer;
 }
 
@@ -110,7 +102,7 @@
     background-color: rgba(256, 256, 256, 0.8);
     border-bottom: 1px solid gainsboro;
 
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0.8rem;
     align-items: center;
   }
@@ -141,10 +133,6 @@
   }
 
   .menuButton {
-    height: 1.5rem;
-    width: 1.9rem;
-    padding: 0rem 0.2rem;
-
     order: -1;
   }
 

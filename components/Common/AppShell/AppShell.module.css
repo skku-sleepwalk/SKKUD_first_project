@@ -5,17 +5,29 @@
   height: 100%;
 }
 
-.displayNone {
-  display: none;
-}
-
 .headerSection {
-  position: sticky;
+  position: fixed;
   width: 100%;
-  top: 0;
+  height: 3.75rem;
 }
 
 .childrenSection {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
+}
+
+.childrenSectionPadding {
+  padding-top: 3.75rem;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .headerSection {
+    height: 6.25rem;
+  }
+
+  .childrenSectionPadding {
+    padding-top: 6.25rem;
+  }
 }

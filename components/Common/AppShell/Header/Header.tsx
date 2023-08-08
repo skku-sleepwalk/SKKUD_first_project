@@ -1,7 +1,10 @@
+import { ActionButton } from "../../ActionButton/ActionButton";
+import { UnstylesButton } from "../../UnstyledButton/UnstyledButton";
 import style from "./Header.module.css";
 import { IconMenu2 } from "@tabler/icons-react";
 
 interface HeaderProps {
+  onOpen?: () => void;
   isLogin?: boolean;
 }
 
@@ -9,12 +12,14 @@ export function movePage(str: string) {
   location.href = str;
 }
 
-export function Header({ isLogin }: HeaderProps) {
+export function Header({ onOpen, isLogin }: HeaderProps) {
   return (
     <div className={style.header}>
-      <a className={style.leftSide} href="/main">
-        <img src="/images/45logo.svg" className={style.img}></img>
-      </a>
+      <div className={style.leftSide}>
+        <UnstylesButton onClick={() => movePage("/main")}>
+          <img src="/images/45logo.svg" className={style.img} />
+        </UnstylesButton>
+      </div>
       <div className={style.rightSide}>
         {/* 검색 박스 */}
         <div className={style.searchBox}>
@@ -52,9 +57,9 @@ export function Header({ isLogin }: HeaderProps) {
           )}
         </div>
         {/* 메뉴 버튼 */}
-        <button className={style.menuButton}>
+        <ActionButton className={style.menuButton} onClick={onOpen}>
           <IconMenu2 className={style.iconMenu} />
-        </button>
+        </ActionButton>
       </div>
     </div>
   );

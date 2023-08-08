@@ -1,0 +1,99 @@
+.modalWrapper {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.wrapperOpen {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+
+.wrapperClose {
+  visibility: hidden;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 25rem;
+  height: 100%;
+
+  background-color: white;
+}
+
+.modalOpen {
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.modalClose {
+  right: -25rem;
+  transition: all 0.5s ease;
+}
+
+.modalHeader {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.75rem;
+  padding: 0.5rem 0rem;
+  padding-right: 1rem;
+
+  background-color: #246633;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.iconMenu {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .modalWrapper {
+    top: 3.75rem;
+  }
+
+  .modal {
+    width: 22.5rem;
+  }
+
+  .modalOpen {
+    left: 0;
+  }
+
+  .modalClose {
+    left: -22.5rem;
+  }
+
+  .modalHeader {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.2rem 0.4rem;
+    border-bottom: 1px solid gainsboro;
+
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .iconMenu {
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
