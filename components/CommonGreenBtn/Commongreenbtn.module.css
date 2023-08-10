@@ -13,4 +13,6 @@
   font-weight: bold;
   font-family: "Inter", sans-serif;
   /* font-family: 'Lugrasimo', cursive; */
+
+  cursor: pointer;
 }

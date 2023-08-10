@@ -10,7 +10,15 @@
   box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.1);
 
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.tabRightSection {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+
+  align-items: center;
   gap: 1rem;
 }
 
@@ -23,14 +31,25 @@
   background-color: rgb(242, 242, 242);
 }
 
+.tabButton:hover {
+  background-color: rgb(230, 230, 230);
+}
+
 .activeTabButton {
   color: white;
   background-color: #246633;
 }
 
+.activeTabButton:hover {
+  background-color: #1c5028;
+}
+
 @media (max-width: 900px) {
   .tabWrapper {
     padding: 0rem 2rem;
+  }
+
+  .tabRightSection {
     gap: 0.8rem;
   }
 }
@@ -42,10 +61,15 @@
     gap: 0.5rem;
   }
 
+  .tabRightSection {
+    gap: 0.5rem;
+  }
+
   .tabButton {
     height: 1.3rem;
     padding: 0rem 0.4rem;
 
+    border-radius: 0.3rem;
     font-size: small;
   }
 }
