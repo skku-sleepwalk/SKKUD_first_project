@@ -3,4 +3,6 @@ export interface Room {
   content: string;
   hostId: number;
 }
-export interface makeRoomResponse {}
+export interface makeRoomResponse {
+  postID: number;
+}
