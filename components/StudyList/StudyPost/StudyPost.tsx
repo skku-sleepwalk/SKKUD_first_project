@@ -8,12 +8,19 @@ import style from "./StudyPost.module.css";
 import { useMediaQuery } from "react-responsive";
 import { UnstylesButton } from "@/components/Common/UnstyledButton/UnstyledButton";
 
-export function StudyPost() {
+export interface StudyPostProps {
+  isLast?: boolean;
+}
+
+export function StudyPost({ isLast }: StudyPostProps) {
   const mobile = useMediaQuery({
     query: "(max-width:500px)",
   });
+
   return (
-    <UnstylesButton className={style.wrapper}>
+    <UnstylesButton
+      className={`${style.wrapper} ${!isLast && style.borderBottom}`}
+    >
       <div className={style.header}>
         <IconVocabulary
           size={mobile ? "1.4rem" : "1.8rem"}

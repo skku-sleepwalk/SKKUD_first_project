@@ -2,6 +2,7 @@ import { HamburgerBtn } from "@/components/HamburgerBtn/HamburgerBtn";
 import styles from "./main.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
+import { movePage } from "@/components/Common/AppShell/Header/Header";
 export default function main() {
   return (
     <div className={styles.backgroundColor}>
@@ -21,6 +22,7 @@ export default function main() {
             float: "right",
             marginRight: "20px",
           }}
+          onClick={() => movePage("/login")}
         ></Commongreenbtn>
         <div>
           <h1 className={styles.h1}>4.5</h1>
@@ -30,7 +32,7 @@ export default function main() {
         <Commongreenbtn
           value="방 만들기"
           style={{ marginTop: "2%", marginLeft: "65%" }}
-          link="http://localhost:3001/makeRoom/makeRoom"
+          onClick={() => movePage("/makeRoom")}
         ></Commongreenbtn>
       </div>
     </div>

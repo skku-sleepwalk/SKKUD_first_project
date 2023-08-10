@@ -2,23 +2,13 @@ import styles from "./Commongreenbtn.module.css";
 import React from "react";
 
 export interface greenbtnProps {
+  onClick?: () => void;
   value: string;
   style: React.CSSProperties;
-  link?: string;
 }
-export function Commongreenbtn({ value, style, link }: greenbtnProps) {
-  if (link) {
-    return (
-      <a href={link}>
-        <button className={styles.backgroundColor} style={style}>
-          {value}
-        </button>
-      </a>
-    );
-  }
-
+export function Commongreenbtn({ onClick, value, style }: greenbtnProps) {
   return (
-    <button className={styles.backgroundColor} style={style}>
+    <button className={styles.backgroundColor} onClick={onClick} style={style}>
       {value}
     </button>
   );
