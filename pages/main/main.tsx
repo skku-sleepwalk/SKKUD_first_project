@@ -30,6 +30,7 @@ export default function main() {
         <Commongreenbtn
           value="방 만들기"
           style={{ marginTop: "2%", marginLeft: "65%" }}
+          link="http://localhost:3001/makeRoom/makeRoom"
         ></Commongreenbtn>
       </div>
     </div>

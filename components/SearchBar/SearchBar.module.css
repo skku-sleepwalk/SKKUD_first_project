@@ -5,6 +5,7 @@
   width: 700px;
   padding-left: 50px;
   font-size: 20px;
+  outline: none;
 }
 .Search {
   position: relative;
