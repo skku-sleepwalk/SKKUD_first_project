@@ -16,7 +16,6 @@
 
 .rightSide {
   display: flex;
-  box-sizing: border-box;
   width: auto;
   height: inherit;
   padding: 0.5rem 0rem;
@@ -38,7 +37,6 @@
 
 .searchInput,
 .loginButton {
-  box-sizing: border-box;
   height: 100%;
 
   outline: 0;
@@ -94,7 +92,6 @@
 
   .rightSide {
     display: flex;
-    box-sizing: border-box;
     width: 100%;
     height: 2.5rem;
     padding: 0.2rem 0.4rem;

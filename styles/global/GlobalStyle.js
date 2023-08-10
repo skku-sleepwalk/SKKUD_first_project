@@ -20,5 +20,6 @@ export default createGlobalStyle`
 
   * {
     font-family: "SUITE", sans-serif;
+    box-sizing: border-box;
   }
 `;
