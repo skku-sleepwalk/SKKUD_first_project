@@ -38,11 +38,21 @@ export default function main() {
                 width: "100%",
                 height: "80%",
                 borderRadius: "0.5rem",
-                paddingTop: "3vh",
-                paddingBottom: "7vh",
+                marginLeft: "1rem",
+
+                paddingTop: "1vh",
+                // paddingBottom: "7vh",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
-              <div style={{ paddingLeft: "100px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-evenly",
+                }}
+              >
                 {week1 == 1 ? (
                   <button
                     className={styles.btnTrue}
@@ -179,28 +189,54 @@ export default function main() {
                   </button>
                 )}
               </div>
-              <div style={{ marginTop: "10px" }}>
-                <span className={styles.font1}>과목명</span>
-                <input type="text" className={styles.subjectNameInput} />
-              </div>
-
-              <div style={{ marginTop: "10px" }}>
-                <span className={styles.font1}>교수명</span>
-                <input type="text" className={styles.subjectNameInput} />
-              </div>
-              <div style={{ marginTop: "10px" }}>
-                <span
-                  className={styles.font1}
-                  style={{ position: "relative", bottom: "75px" }}
+              <div
+                style={{
+                  marginTop: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                  paddingBottom: "4rem",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-evenly",
+                  }}
                 >
-                  상세 내용
-                </span>
+                  <span className={styles.font1}>과목명</span>
+                  <input type="text" className={styles.subjectNameInput} />
+                </div>
 
-                <textarea
-                  placeholder="시간, 오픈채팅방 주소 등을 적어주세요"
-                  style={{ display: "inline-block" }}
-                  className={styles.detailInput}
-                ></textarea>
+                <div
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <span className={styles.font1}>교수명</span>
+                  <input type="text" className={styles.subjectNameInput} />
+                </div>
+                <div
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    paddingRight: "2.1rem",
+                    paddingLeft: "1.5rem",
+                  }}
+                >
+                  <span className={styles.font1}>상세 내용</span>
+
+                  <textarea
+                    placeholder="시간, 오픈채팅방 주소 등을 적어주세요"
+                    className={styles.detailInput}
+                  ></textarea>
+                </div>
               </div>
             </div>
             <Commongreenbtn
