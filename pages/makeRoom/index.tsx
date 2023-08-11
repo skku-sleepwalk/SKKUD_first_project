@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./makeRoom.module.css";
+import styles from "./index.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 export default function main() {
   const [week1, setweek1] = useState(0);
