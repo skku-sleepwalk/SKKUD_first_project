@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from "./Join.module.css";
 import { IconCheck } from "@tabler/icons-react";
+import { useMediaQuery } from "react-responsive";
 
 interface CheckedState {
   use: boolean;
@@ -8,6 +9,10 @@ interface CheckedState {
 }
 
 export function Join() {
+  const mobile = useMediaQuery({
+    query: "(max-width:660px)",
+  });
+
   const [isCertifi, setIsCertifi] = useState(false);
 
   // 서비스 이용 약관 관련
@@ -48,37 +53,59 @@ export function Join() {
         {/* 아이디 */}
         <div className={style.infoWrapper}>
           <div className={style.infoLabel}>아이디</div>
-          <input className={style.infoInput} type="text" maxLength={10} />
-          <div className={style.infoPlaceholder}>(영문/숫자, 4~10자)</div>
+          <div className={style.infoFlexBox}>
+            <div className={style.infoRowBox}>
+              <input className={style.infoInput} type="text" maxLength={10} />
+              <button className={style.certifiButton}>중복 확인</button>
+              {!mobile && (
+                <div className={style.infoPlaceholder}>(영문/숫자, 4~10자)</div>
+              )}
+            </div>
+            {mobile && (
+              <div className={style.infoPlaceholder}>(영문/숫자, 4~10자)</div>
+            )}
+            {/* <div className={style.infoNotice}>사용 가능한 아이디입니다.</div> */}
+            <div className={style.infoNotice} style={{ color: "#246633" }}>
+              * 중복된 아이디입니다.
+            </div>
+          </div>
         </div>
         {/* 이메일 */}
         <div className={style.infoWrapper}>
           <div className={style.infoLabel}>이메일</div>
-          <div className={style.infoBox}>
-            <input
-              className={style.infoInput}
-              type="email"
-              defaultValue="@g.skku.edu"
-            />
-            <button
-              className={style.certifiButton}
-              onClick={() => {
-                setIsCertifi(true);
-              }}
-            >
-              인증 요청
-            </button>
+          <div className={style.infoFlexBox}>
+            <div className={style.infoRowBox}>
+              <input
+                className={style.infoInput}
+                type="email"
+                defaultValue="@g.skku.edu"
+              />
+              <button
+                className={style.certifiButton}
+                onClick={() => {
+                  setIsCertifi(true);
+                }}
+              >
+                인증 요청
+              </button>
+            </div>
             {/* 인증 요청시 */}
             {isCertifi && (
-              <>
-                <input
-                  className={style.infoInput}
-                  type="text"
-                  placeholder="인증번호 입력"
-                  maxLength={6}
-                />
-                <button className={style.certifiButton}>인증</button>
-              </>
+              <div className={style.infoFlexBox}>
+                <div className={style.infoRowBox}>
+                  <input
+                    className={style.infoInput}
+                    type="text"
+                    placeholder="인증번호 입력"
+                    maxLength={6}
+                  />
+                  <button className={style.certifiButton}>인증</button>
+                </div>
+                {/* <div className={style.infoNotice}>인증에 성공하였습니다.</div> */}
+                <div className={style.infoNotice} style={{ color: "#246633" }}>
+                  * 인증에 실패하였습니다.
+                </div>
+              </div>
             )}
           </div>
         </div>
@@ -100,14 +127,8 @@ export function Join() {
           className={`${style.infoWrapper} ${style.infoWrapperBdrBtm} ${style.infoMarginTop}`}
         >
           <div className={style.infoLabel}>닉네임</div>
-          <div className={style.infoBox}>
-            <input className={style.infoInput} type="text" maxLength={6} />
-            <button className={style.certifiButton}>중복 확인</button>
-            {/* <div className={style.infoNotice}>사용 가능한 닉네임입니다.</div> */}
-            <div className={style.infoNotice} style={{ color: "#246633" }}>
-              * 중복된 닉네임입니다.
-            </div>
-          </div>
+          <input className={style.infoInput} type="text" maxLength={6} />
+          <div className={style.infoPlaceholder}>(2~16자)</div>
         </div>
         {/* 서비스 이용 약관 파트 */}
         <h4 className={`${style.subTitle} ${style.titleMarginTop}`}>

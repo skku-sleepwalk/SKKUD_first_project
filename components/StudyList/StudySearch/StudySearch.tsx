@@ -14,7 +14,7 @@ export function StudySearch({ isSearch }: StudySearchProps) {
         </div>
       ) : (
         <div className={style.searchKeyword}>
-          Study in <img src="/images/45logoBlack.svg" className={style.img} />
+          Study with <img src="/images/45logoBlack.svg" className={style.img} />
         </div>
       )}
     </div>
