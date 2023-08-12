@@ -80,6 +80,8 @@
   background-color: #246633;
   color: #b9dac0;
   font-size: large;
+  text-align: center;
+  text-decoration: none;
 }
 
 .link:hover {
