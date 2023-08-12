@@ -2,6 +2,7 @@ import { IconClock, IconMapPin, IconVocabulary } from "@tabler/icons-react";
 import style from "./Study.module.css";
 import { useMediaQuery } from "react-responsive";
 import { ActionButton } from "../Common/ActionButton/ActionButton";
+import { movePage } from "../Common/AppShell/Header/Header";
 
 export function Study() {
   const mobile = useMediaQuery({
@@ -44,9 +45,9 @@ export function Study() {
           </div>
         </div>
         <div className={style.linkBox}>
-          <ActionButton className={style.link}>
+          <a className={style.link} href="https://mantine.dev/" target="_blank">
             Study 카카오톡 오픈채팅방으로 이동
-          </ActionButton>
+          </a>
         </div>
       </div>
     </div>
