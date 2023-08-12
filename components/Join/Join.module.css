@@ -33,12 +33,18 @@
   font-size: small;
 }
 
-.infoBox {
+.infoFlexBox {
   display: flex;
   flex-wrap: wrap;
   row-gap: 0.5rem;
 
-  width: 20rem;
+  width: 23rem;
+}
+
+.infoRowBox {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .infoInput {
@@ -68,6 +74,7 @@
 }
 
 .infoNotice {
+  width: 100%;
   height: 1rem;
 
   font-size: small;
@@ -195,7 +202,7 @@
 
 /* 모바일 용 미디어 쿼리 정의 */
 /* 가로로 내용이 많아서 여기만 기준이 다름 */
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .displayNone {
     display: none;
   }
@@ -233,6 +240,10 @@
 
     font-weight: 600;
     font-size: medium;
+  }
+
+  .infoFlexBox {
+    width: 100%;
   }
 
   .infoInput {

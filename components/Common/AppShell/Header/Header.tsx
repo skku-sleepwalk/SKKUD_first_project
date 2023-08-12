@@ -43,7 +43,7 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
               LOGIN
             </button>
           )}
-          {/* 마이페이지 버튼 */}
+          {/* 로그 아웃 버튼 */}
           {isLogin && (
             <button
               className={style.loginButton}
@@ -52,14 +52,15 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
                 movePage("/mypage");
               }}
             >
-              MY PAGE
+              LOG OUT
             </button>
           )}
         </div>
+        {/* 아래도 데모에서는 제외 */}
         {/* 메뉴 버튼 */}
-        <ActionButton className={style.menuButton} onClick={onOpen}>
+        {/* <ActionButton className={style.menuButton} onClick={onOpen}>
           <IconMenu2 className={style.iconMenu} />
-        </ActionButton>
+        </ActionButton> */}
       </div>
     </div>
   );

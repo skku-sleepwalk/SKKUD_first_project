@@ -18,14 +18,15 @@ export function StudyTab({ setManyTab, setNewTab, activeTab }: StudyTabProps) {
         스터디 만들기
       </ActionButton>
       <div className={style.tabRightSection}>
-        <ActionButton
+        {/* 아래는 데모에서 제외 */}
+        {/* <ActionButton
           className={`${style.tabButton} ${
             activeTab === "many" && style.activeTabButton
           }`}
           onClick={setManyTab}
         >
           인원 많은 순
-        </ActionButton>
+        </ActionButton> */}
         <ActionButton
           className={`${style.tabButton} ${
             activeTab === "new" && style.activeTabButton
