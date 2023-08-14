@@ -1,5 +1,5 @@
 import { HamburgerBtn } from "@/components/HamburgerBtn/HamburgerBtn";
-import styles from "./main.module.css";
+import styles from "./index.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
 import { movePage } from "@/components/Common/AppShell/Header/Header";

@@ -8,12 +8,8 @@ export default createGlobalStyle`
     font-style: normal;
   }
 
-  html, body, #__next {
-    width: 100%;
-    height: 100%;
-  }
-
   body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
   }
