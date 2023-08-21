@@ -34,12 +34,13 @@ export function StudyPost({ isLast }: StudyPostProps) {
         <p>프기실 같이 공부할 사람 구해요</p>
       </div>
       <div className={style.footer}>
-        <IconClock size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
+        {/* 아래는 일단 데모에서는 제외 */}
+        {/* <IconClock size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
         <div className={style.text}>매주 화, 목 6시</div>
         <IconMapPin size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
         <div className={style.text}>온라인</div>
         <IconUsersGroup size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
-        <div className={style.text}>5명</div>
+        <div className={style.text}>5명</div> */}
       </div>
     </UnstylesButton>
   );
