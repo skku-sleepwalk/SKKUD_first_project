@@ -1,7 +1,9 @@
 import { useState } from "react";
 import styles from "./index.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
+import { MakeRoom } from "@/utils/makeRoom";
 export default function main() {
+  var formData = new FormData();
   const [week1, setweek1] = useState(0);
   const [week2, setweek2] = useState(0); //이걸로 날짜 보내면 될듯
   const [week3, setweek3] = useState(0);
@@ -9,6 +11,10 @@ export default function main() {
   const [week5, setweek5] = useState(0);
   const [week6, setweek6] = useState(0);
   const [week7, setweek7] = useState(0);
+  const [title, settitle] = useState("");
+  const [content, setcontent] = useState("");
+  const [professor, setprofessor] = useState("");
+
   //이거 배열로바꿔야... 여러개 선택 가능해야 함
   //아니면 걍 여러개도 나쁘지않은듯
   const stopEvent = (e: any) => {
@@ -206,7 +212,13 @@ export default function main() {
                   }}
                 >
                   <span className={styles.font1}>과목명</span>
-                  <input type="text" className={styles.subjectNameInput} />
+                  <input
+                    type="text"
+                    className={styles.subjectNameInput}
+                    onChange={(event) => {
+                      settitle(event.target.value);
+                    }}
+                  />
                 </div>
 
                 <div
@@ -218,7 +230,13 @@ export default function main() {
                   }}
                 >
                   <span className={styles.font1}>교수명</span>
-                  <input type="text" className={styles.subjectNameInput} />
+                  <input
+                    type="text"
+                    className={styles.subjectNameInput}
+                    onChange={(event) => {
+                      setprofessor(event.target.value);
+                    }}
+                  />
                 </div>
                 <div
                   style={{
@@ -235,14 +253,43 @@ export default function main() {
                   <textarea
                     placeholder="시간, 오픈채팅방 주소 등을 적어주세요"
                     className={styles.detailInput}
+                    onChange={(event) => {
+                      setcontent(event.target.value);
+                    }}
                   ></textarea>
                 </div>
               </div>
             </div>
-            <Commongreenbtn
-              value="완료"
-              style={{ marginTop: "10px", marginLeft: "500px" }}
-            />
+            <div
+              onClick={() => {
+                if (
+                  title != "" &&
+                  content != "" &&
+                  professor != "" &&
+                  (week1 || week2 || week3 || week4 || week5 || week6 || week7)
+                )
+                  MakeRoom({
+                    title: title,
+                    content: content,
+                    prof: professor,
+                    mon: week1,
+                    tue: week2,
+                    wed: week3,
+                    thu: week4,
+                    fri: week5,
+                    sat: week6,
+                    sun: week7,
+                    hostId: 0,
+                  }).then((response) => {
+                    console.log(response);
+                  });
+              }}
+            >
+              <Commongreenbtn
+                value="완료"
+                style={{ marginTop: "10px", marginLeft: "500px" }}
+              />
+            </div>
           </form>
         </div>
       </div>
