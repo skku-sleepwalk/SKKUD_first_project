@@ -10,7 +10,7 @@ export function ScrollToTop() {
 }
 
 export default function Main() {
-  const [activeTab, setActiveTab] = useState<string>("many");
+  const [activeTab, setActiveTab] = useState<string>("new");
   const isSearch = false;
 
   return (
@@ -22,10 +22,6 @@ export default function Main() {
         searchSection={<StudySearch isSearch={isSearch} />}
         tabSection={
           <StudyTab
-            setManyTab={() => {
-              setActiveTab("many");
-              ScrollToTop();
-            }}
             setNewTab={() => {
               setActiveTab("new");
               ScrollToTop();
