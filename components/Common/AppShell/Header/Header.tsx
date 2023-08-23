@@ -1,22 +1,33 @@
+import { useForm } from "react-hook-form";
 import { ActionButton } from "../../ActionButton/ActionButton";
 import { UnstylesButton } from "../../UnstyledButton/UnstyledButton";
 import style from "./Header.module.css";
 import { IconMenu2 } from "@tabler/icons-react";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 interface HeaderProps {
   onOpen?: () => void;
   isLogin?: boolean;
 }
 
-export function movePage(str: string) {
-  location.href = str;
-}
-
 export function Header({ onOpen, isLogin }: HeaderProps) {
+  const router = useRouter();
+
+  const [keyword, setKeyword] = useState<string>("");
+
+  // 엔터 키 누를 시 submit 발생
+  const handleKeyDown = (e: any) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // 기본 엔터 키 동작 막기
+      router.replace(`/study?search=${keyword}`);
+    }
+  };
+
   return (
     <div className={style.header}>
       <div className={style.leftSide}>
-        <UnstylesButton onClick={() => movePage("/main")}>
+        <UnstylesButton onClick={() => router.replace("/main")}>
           <img src="/images/45logo.svg" className={style.img} />
         </UnstylesButton>
       </div>
@@ -24,9 +35,12 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
         {/* 검색 박스 */}
         <div className={style.searchBox}>
           <input
+            className={style.searchInput}
             type="text"
             placeholder="SEARCH"
-            className={style.searchInput}
+            value={keyword}
+            onChange={(e) => setKeyword(e.currentTarget.value)}
+            onKeyDown={handleKeyDown}
           ></input>
         </div>
         {/* 로그인/마이페이지 버튼 */}
@@ -37,7 +51,7 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
               className={style.loginButton}
               type="button"
               onClick={() => {
-                movePage("/login");
+                router.replace("/login");
               }}
             >
               LOGIN
@@ -49,7 +63,7 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
               className={style.loginButton}
               type="button"
               onClick={() => {
-                movePage("/mypage");
+                router.replace("/mypage");
               }}
             >
               LOG OUT

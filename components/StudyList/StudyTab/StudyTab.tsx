@@ -1,6 +1,6 @@
-import { movePage } from "@/components/Common/AppShell/Header/Header";
 import style from "./StudyTab.module.css";
 import { ActionButton } from "@/components/Common/ActionButton/ActionButton";
+import { useRouter } from "next/router";
 
 export interface StudyTabProps {
   setNewTab: () => void;
@@ -8,11 +8,13 @@ export interface StudyTabProps {
 }
 
 export function StudyTab({ setNewTab, activeTab }: StudyTabProps) {
+  const router = useRouter();
+
   return (
     <div className={style.tabWrapper}>
       <ActionButton
         className={`${style.tabButton} ${style.activeTabButton}`}
-        onClick={() => movePage("/makeRoom")}
+        onClick={() => router.replace("/makeRoom")}
       >
         스터디 만들기
       </ActionButton>
