@@ -36,7 +36,7 @@ export default function Index() {
           <StudySearch
             isSearch={isSearch}
             keyword={isSearch ? keyword : null}
-            searchNum={isSearch ? StudyData?.data.length : null}
+            searchNum={isSearch && StudyData ? StudyData.length : null}
           />
         }
         tabSection={
@@ -49,7 +49,7 @@ export default function Index() {
           />
         }
       >
-        {StudyData?.data.map((data, index) => (
+        {StudyData?.map((data, index) => (
           <StudyPost data={data} />
         ))}
         {/* <StudyPost data={MOCKUP_STUDY} /> */}
