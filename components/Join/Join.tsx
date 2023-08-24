@@ -3,7 +3,7 @@ import style from "./Join.module.css";
 import { IconCheck } from "@tabler/icons-react";
 import { useForm } from "react-hook-form";
 import { UnstylesButton } from "../Common/UnstyledButton/UnstyledButton";
-import { LoginErrorModal } from "../Login/LoginErrorModal/LoginErrorModal";
+import { ErrorModal } from "../Common/ErrorModal/ErrorModal";
 
 interface CheckedState {
   use: boolean;
@@ -128,7 +128,7 @@ export function Join() {
   const errorModal = inputField.map((item) => {
     if (errors[item]) {
       return (
-        <LoginErrorModal
+        <ErrorModal
           CloseModal={() => {
             clearErrors();
             setFocus(item);

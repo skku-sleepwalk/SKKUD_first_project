@@ -2,7 +2,7 @@ import { IconCheck, IconLock, IconUser } from "@tabler/icons-react";
 import style from "./Login.module.css";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { LoginErrorModal } from "./LoginErrorModal/LoginErrorModal";
+import { ErrorModal } from "../Common/ErrorModal/ErrorModal";
 import { useRouter } from "next/router";
 import { UnstylesButton } from "../Common/UnstyledButton/UnstyledButton";
 
@@ -52,7 +52,7 @@ export function Login() {
   const errorModal = inputField.map((item) => {
     if (errors[item]) {
       return (
-        <LoginErrorModal
+        <ErrorModal
           CloseModal={() => {
             clearErrors();
             setFocus(item);
