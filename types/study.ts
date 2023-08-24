@@ -13,11 +13,3 @@ export interface Study {
   sat: number;
   sun: number;
 }
-
-export interface GetStudyResponse {
-  data: Study;
-}
-
-export interface GetStudyListResponse {
-  data: Study[];
-}
