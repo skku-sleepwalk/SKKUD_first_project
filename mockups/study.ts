@@ -3,7 +3,7 @@ import { Study } from "@/types/study";
 export const MOCKUP_STUDY: Study = {
   postId: 1,
   hostId: 1,
-  title: "프로그래밍 실습과 기초",
+  title: "프로그래밍 기초와 실습",
   prof: "김영훈",
   content:
     "같이 공부하면서 C언어에 미쳐볼 사람 구해요. https://open.kakao.com/o/gTk2aC7e",

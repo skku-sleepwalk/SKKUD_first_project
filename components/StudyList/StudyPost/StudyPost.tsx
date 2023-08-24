@@ -45,7 +45,7 @@ export function StudyPost({ data }: StudyPostProps) {
           color="#246633"
         />
         <div className={style.title}>{data.title}</div>
-        <div className={style.professor}>{data.prof}</div>
+        <div className={style.professor}>{data.prof} 교수님</div>
       </div>
       <div className={style.description}>{data.content}</div>
       <div className={style.footer}>

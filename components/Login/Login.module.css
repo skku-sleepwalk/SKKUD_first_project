@@ -131,7 +131,7 @@
 
 .buttonBox {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 1rem;
   padding-top: 0.2rem;
 

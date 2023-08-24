@@ -41,12 +41,6 @@
   width: 23rem;
 }
 
-.infoRowBox {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
 .infoInput {
   max-width: 10rem;
   height: 2.1rem;
@@ -55,6 +49,10 @@
   border: 1px solid gainsboro;
   border-radius: 0.2rem;
   outline: none;
+}
+
+.infoInput:disabled {
+  background-color: rgb(240, 240, 240);
 }
 
 .infoInput:focus {
@@ -143,8 +141,13 @@
   border: 1px solid gainsboro;
 
   font-size: small;
+  line-height: 1.5;
 
   overflow-y: scroll;
+}
+
+.scrollBox > p {
+  margin: 0;
 }
 
 .serviceCheckBox {
