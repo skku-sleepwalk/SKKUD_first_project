@@ -21,6 +21,7 @@
     "react-responsive": "^9.0.2",
     "styled": "^1.0.0",
     "styled-components": "^6.0.4",
+    "swr": "^2.2.1",
     "typescript": "5.1.6"
   }
 }
