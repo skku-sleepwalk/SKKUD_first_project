@@ -1,8 +1,11 @@
 import { HamburgerBtn } from "@/components/HamburgerBtn/HamburgerBtn";
-import styles from "./main.module.css";
+import styles from "./index.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
+import { useRouter } from "next/router";
+
 export default function main() {
+  const router = useRouter();
   return (
     <div className={styles.backgroundColor}>
       <style jsx global>
@@ -21,6 +24,7 @@ export default function main() {
             float: "right",
             marginRight: "20px",
           }}
+          onClick={() => router.replace("/login")}
         ></Commongreenbtn>
         <div>
           <h1 className={styles.h1}>4.5</h1>
@@ -30,6 +34,7 @@ export default function main() {
         <Commongreenbtn
           value="방 만들기"
           style={{ marginTop: "2%", marginLeft: "65%" }}
+          onClick={() => router.replace("/makeRoom")}
         ></Commongreenbtn>
       </div>
     </div>

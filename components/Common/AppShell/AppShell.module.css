@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.headerSection {
+  position: fixed;
+  width: 100%;
+  height: 3.75rem;
+}
+
+.childrenSection {
+  width: 100%;
+  min-height: 100%;
+}
+
+.childrenSectionPadding {
+  padding-top: 3.75rem;
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .headerSection {
+    height: 6.25rem;
+  }
+
+  .childrenSectionPadding {
+    padding-top: 6.25rem;
+  }
+}

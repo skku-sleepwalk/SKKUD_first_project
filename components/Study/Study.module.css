@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.subjectContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(242, 242, 242);
+
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  color: #246633;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.professor {
+  color: gray;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 50rem;
+  margin-top: 2rem;
+
+  gap: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 1rem;
+  gap: 0.5rem;
+}
+
+.largeText {
+  display: flex;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  color: #246633;
+  font-size: large;
+  font-weight: bold;
+
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.smallText {
+  color: gray;
+  font-size: small;
+  font-weight: normal;
+}
+
+.scheduleBox {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linkWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.linkBox {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 23rem;
+  height: 3rem;
+
+  background-color: #246633;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.linkBox:hover {
+  background-color: #1c5028;
+}
+
+.link {
+  color: white;
+  font-size: large;
+}
+
+@media (max-width: 950px) {
+  .mainContainer {
+    width: 80%;
+  }
+}
+
+/* 모바일 용 미디어 쿼리 정의 */
+@media (max-width: 500px) {
+  .mainContainer {
+    width: 22.5rem;
+    margin-top: 1rem;
+  }
+
+  .subjectContainer {
+    height: 4rem;
+    gap: 0.7rem;
+  }
+
+  .title {
+    font-size: large;
+  }
+
+  .professor {
+    font-size: small;
+  }
+
+  .largeText {
+    font-size: medium;
+  }
+
+  .wrapper {
+    padding-left: 0.7rem;
+    font-size: small;
+  }
+
+  .link {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0rem;
+    font-size: medium;
+  }
+}

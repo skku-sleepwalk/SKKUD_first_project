@@ -1,4 +1,3 @@
-import Header from "@/components/header/header";
 import { SearchedResult } from "@/components/searchedText/SearchedResult";
 import { DoubleBtn } from "@/components/DoubleBtn/DoubleBtn";
 import { ListBlock } from "../components/listsBlock/listBlock";
@@ -40,24 +39,7 @@ export default function index() {
   ];
 
   return (
-    <div className={styles.listPageWrapper}>
-      <style jsx global>
-        {`
-          body {
-            margin: 0px;
-            padding: 0px;
-            background-color: #81c690;
-          }
-        `}
-      </style>
-      {/* grid header grid 왼쪽 초록 색 지정 */}
-      <div className={styles.green1}></div>
-      {/* header component */}
-      <div className={styles.header}>
-        <Header isLogin={false} />
-      </div>
-      {/* grid header grid 오른쪽 초록 색 지정 */}
-      <div className={styles.green2}></div>
+    <>
       {/* // query prop에 검색어와 방 개수 전달, 표시 */}
       <div className={styles.text}>
         <SearchedResult query="프기실" ResultCnt={3} />
@@ -82,6 +64,6 @@ export default function index() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }

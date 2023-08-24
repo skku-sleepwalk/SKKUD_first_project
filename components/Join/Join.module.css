@@ -1,5 +1,4 @@
 .wrapper {
-  box-sizing: border-box;
   width: 100%;
   padding: 5rem;
   padding-top: 1rem;
@@ -13,7 +12,6 @@
 
 .infoWrapper {
   display: flex;
-  box-sizing: border-box;
   padding: 0.5rem;
 
   width: 100%;
@@ -27,7 +25,6 @@
 
 .infoLabel {
   display: flex;
-  box-sizing: border-box;
 
   width: 6rem;
   height: 2rem;
@@ -36,16 +33,21 @@
   font-size: small;
 }
 
-.infoBox {
+.infoFlexBox {
   display: flex;
   flex-wrap: wrap;
   row-gap: 0.5rem;
 
-  width: 20rem;
+  width: 23rem;
+}
+
+.infoRowBox {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .infoInput {
-  box-sizing: border-box;
   max-width: 10rem;
   height: 2.1rem;
   padding: 0.1rem 0.4rem;
@@ -62,7 +64,6 @@
 
 .infoPlaceholder {
   display: flex;
-  box-sizing: border-box;
 
   height: 2rem;
   margin-left: 0.7rem;
@@ -73,8 +74,7 @@
 }
 
 .infoNotice {
-  box-sizing: border-box;
-
+  width: 100%;
   height: 1rem;
 
   font-size: small;
@@ -82,7 +82,6 @@
 }
 
 .certifiButton {
-  box-sizing: border-box;
   height: 2.1rem;
   margin-left: 0.7rem;
   padding-left: 0.5rem;
@@ -202,7 +201,8 @@
 }
 
 /* 모바일 용 미디어 쿼리 정의 */
-@media (max-width: 500px) {
+/* 가로로 내용이 많아서 여기만 기준이 다름 */
+@media (max-width: 660px) {
   .displayNone {
     display: none;
   }
@@ -214,7 +214,6 @@
   }
 
   .wrapper {
-    box-sizing: border-box;
     width: 350px;
     padding: 1rem;
     padding-top: 0.5rem;
@@ -225,7 +224,6 @@
   .infoWrapper {
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
     padding: 0.2rem 0rem;
 
     width: 100%;
@@ -244,6 +242,10 @@
     font-size: medium;
   }
 
+  .infoFlexBox {
+    width: 100%;
+  }
+
   .infoInput {
     max-width: none;
     flex-grow: 1;
@@ -252,7 +254,6 @@
 
   .infoPlaceholder {
     display: flex;
-    box-sizing: border-box;
 
     width: 100%;
     height: 1.2rem;
