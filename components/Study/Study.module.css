@@ -53,10 +53,22 @@
 }
 
 .largeText {
+  display: flex;
+  flex-wrap: nowrap;
+
   width: 100%;
   color: #246633;
   font-size: large;
   font-weight: bold;
+
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.smallText {
+  color: gray;
+  font-size: small;
+  font-weight: normal;
 }
 
 .scheduleBox {
@@ -67,25 +79,32 @@
   gap: 1rem;
 }
 
-.linkBox {
+.linkWrapper {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-.link {
-  padding: 0.4rem 1.2rem;
-  border-radius: 0.5rem;
+.linkBox {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 23rem;
+  height: 3rem;
 
   background-color: #246633;
-  color: #b9dac0;
-  font-size: large;
-  text-align: center;
-  text-decoration: none;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.link:hover {
+.linkBox:hover {
   background-color: #1c5028;
+}
+
+.link {
+  color: white;
+  font-size: large;
 }
 
 @media (max-width: 950px) {

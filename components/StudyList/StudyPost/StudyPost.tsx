@@ -1,4 +1,5 @@
 import {
+  IconCalendar,
   IconClock,
   IconMapPin,
   IconUsersGroup,
@@ -9,6 +10,7 @@ import { useMediaQuery } from "react-responsive";
 import { UnstylesButton } from "@/components/Common/UnstyledButton/UnstyledButton";
 import { Study } from "@/types/study";
 import { useRouter } from "next/router";
+import { GetSemester } from "@/utils/getSemester";
 
 export interface StudyPostProps {
   data: Study;
@@ -47,6 +49,8 @@ export function StudyPost({ data }: StudyPostProps) {
       </div>
       <div className={style.description}>{data.content}</div>
       <div className={style.footer}>
+        <IconCalendar size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
+        <div className={style.text}>{GetSemester(data.createdAt)}</div>
         <IconClock size={mobile ? "1.1rem" : "1.5rem"} stroke={1.2} />
         <div className={style.text}>매주 {studyDay.join(", ")}</div>
         {/* 아래는 일단 데모에서는 제외 */}
