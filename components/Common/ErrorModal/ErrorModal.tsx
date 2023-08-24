@@ -1,5 +1,5 @@
 import { IconExclamationCircle, IconX } from "@tabler/icons-react";
-import style from "./LoginErrorModal.module.css";
+import style from "./ErrorModal.module.css";
 import { UnstylesButton } from "@/components/Common/UnstyledButton/UnstyledButton";
 
 interface ErrorModalProps {
