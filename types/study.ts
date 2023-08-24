@@ -14,22 +14,10 @@ export interface Study {
   sun: number;
 }
 
-export interface StudySearch {
-  postId: number;
-  hostId: number;
-  title: string;
-  content: string;
-  createdAt: string;
-}
-
 export interface GetStudyResponse {
   data: Study;
 }
 
 export interface GetStudyListResponse {
   data: Study[];
-}
-
-export interface GetStudySearchListResponse {
-  data: StudySearch[];
 }

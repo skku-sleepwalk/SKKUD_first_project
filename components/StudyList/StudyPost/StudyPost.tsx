@@ -12,10 +12,9 @@ import { useRouter } from "next/router";
 
 export interface StudyPostProps {
   data: Study;
-  isLast?: boolean;
 }
 
-export function StudyPost({ data, isLast }: StudyPostProps) {
+export function StudyPost({ data }: StudyPostProps) {
   const router = useRouter();
   const mobile = useMediaQuery({
     query: "(max-width:500px)",
@@ -34,7 +33,7 @@ export function StudyPost({ data, isLast }: StudyPostProps) {
 
   return (
     <UnstylesButton
-      className={`${style.wrapper} ${!isLast && style.borderBottom}`}
+      className={style.wrapper}
       onClick={() => router.replace(`/study/${data.postId}`)}
     >
       <div className={style.header}>

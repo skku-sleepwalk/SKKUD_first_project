@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { ActionButton } from "../../ActionButton/ActionButton";
 import { UnstylesButton } from "../../UnstyledButton/UnstyledButton";
 import style from "./Header.module.css";
@@ -20,7 +19,9 @@ export function Header({ onOpen, isLogin }: HeaderProps) {
   const handleKeyDown = (e: any) => {
     if (e.key === "Enter") {
       e.preventDefault(); // 기본 엔터 키 동작 막기
-      router.replace(`/study?search=${keyword}`);
+      keyword === ""
+        ? router.replace(`/study`)
+        : router.replace(`/study?search=${keyword}`);
     }
   };
 
