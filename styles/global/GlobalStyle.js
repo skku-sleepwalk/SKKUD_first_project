@@ -14,6 +14,10 @@ export default createGlobalStyle`
     padding: 0;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   * {
     font-family: "SUITE", sans-serif;
     box-sizing: border-box;
