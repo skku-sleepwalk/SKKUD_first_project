@@ -2,12 +2,12 @@ import { IconExclamationCircle, IconX } from "@tabler/icons-react";
 import style from "./LoginErrorModal.module.css";
 import { UnstylesButton } from "@/components/Common/UnstyledButton/UnstyledButton";
 
-interface LoginErrorModalProps {
+interface ErrorModalProps {
   CloseModal?: () => void;
   content: string;
 }
 
-export function LoginErrorModal({ CloseModal, content }: LoginErrorModalProps) {
+export function ErrorModal({ CloseModal, content }: ErrorModalProps) {
   return (
     <div className={style.modal}>
       <div className={style.modalContainer}>
