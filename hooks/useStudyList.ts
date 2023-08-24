@@ -6,6 +6,6 @@ export default function useStudyList(keyword?: string) {
   const url = keyword
     ? `http://localhost:8000/board/search?keyword=${keyword}`
     : `http://localhost:8000/board`;
-  const response = useSWR<GetStudyListResponse>(fetcher(url));
+  const response = useSWR<GetStudyListResponse>(url, (url) => fetcher(url));
   return response;
 }
