@@ -6,7 +6,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/board")
@@ -17,14 +19,13 @@ public class BoardController {
         this.boardService = boardService;
     }
 
-
     @GetMapping
     public List<BoardDto> getBoardList() {
         return boardService.getBoardList();
     }
 
     @PostMapping
-    public Long createPost(@RequestBody BoardDto boardDto) {
+    public Map<String, Long> createPost(@RequestBody BoardDto boardDto) {
         return boardService.savePost(boardDto);
     }
 
@@ -43,12 +44,22 @@ public class BoardController {
 
         existingBoard.setTitle(boardDto.getTitle());
         existingBoard.setContent(boardDto.getContent());
-        // Update other properties
+        existingBoard.setProf(boardDto.getProf());
+        existingBoard.setMon(boardDto.getMon());
+        existingBoard.setTue(boardDto.getTue());
+        existingBoard.setWed(boardDto.getWed());
+        existingBoard.setThu(boardDto.getThu());
+        existingBoard.setFri(boardDto.getFri());
+        existingBoard.setSat(boardDto.getSat());
+        existingBoard.setSun(boardDto.getSun());
 
-        Long updatedBoard = boardService.savePost(existingBoard);
-
+        BoardDto updatedBoard = (BoardDto) boardService.savePost(existingBoard);
+        System.out.println(updatedBoard);
         if (updatedBoard != null) {
-            return ResponseEntity.ok("게시글 수정 성공");
+            Map<String, String> response = new HashMap<>();
+            response.put("message", "게시글 수정 성공");
+
+            return ResponseEntity.ok("Good");
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("게시글 수정 실패");
         }

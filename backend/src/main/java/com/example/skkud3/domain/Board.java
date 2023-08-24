@@ -24,6 +24,9 @@ public class Board {
     @Column(length = 100, nullable = false)
     private String title;
 
+    @Column(length = 100, nullable = false)
+    private String prof;
+
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
@@ -31,11 +34,35 @@ public class Board {
     @Column(updatable = false)
     private LocalDateTime createdAt;
 
+    @Column
+    private Integer mon;
+    @Column
+    private Integer tue;
+    @Column
+    private Integer wed;
+    @Column
+    private Integer thu;
+    @Column
+    private Integer fri;
+    @Column
+    private Integer sat;
+    @Column
+    private Integer sun;
+
+
     @Builder
-    public Board(Long postId, Long hostId, String title, String content) {
+    public Board(Long postId, Long hostId, String title, String prof, String content, Integer mon, Integer tue, Integer wed, Integer thu, Integer fri, Integer sat, Integer sun) {
         this.postId = postId;
         this.hostId = hostId;
         this.title = title;
+        this.prof = prof;
         this.content = content;
+        this.mon = mon;
+        this.tue = tue;
+        this.wed = wed;
+        this.thu = thu;
+        this.fri = fri;
+        this.sat = sat;
+        this.sun = sun;
     }
 }

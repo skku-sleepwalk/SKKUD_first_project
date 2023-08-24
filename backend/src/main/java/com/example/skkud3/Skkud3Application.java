@@ -11,8 +11,5 @@ public class Skkud3Application {
     public static void main(String[] args) {
         SpringApplication.run(Skkud3Application.class, args);
     }
-//    @Bean
-//    public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
-//        return new HiddenHttpMethodFilter();
-//    }
+
 }
