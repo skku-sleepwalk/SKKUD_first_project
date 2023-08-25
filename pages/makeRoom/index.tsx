@@ -2,7 +2,11 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import { Commongreenbtn } from "@/components/CommonGreenBtn/Commongreenbtn";
 import { MakeRoom } from "@/utils/makeRoom";
+import { useRouter } from "next/router";
+
 export default function main() {
+  const router = useRouter();
+
   var formData = new FormData();
   const [week1, setweek1] = useState(0);
   const [week2, setweek2] = useState(0); //이걸로 날짜 보내면 될듯
@@ -282,6 +286,7 @@ export default function main() {
                     hostId: 0,
                   }).then((response) => {
                     console.log(response);
+                    router.replace("/study");
                   });
               }}
             >
